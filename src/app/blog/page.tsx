@@ -3,6 +3,42 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const posts = [
   {
+    slug: 'restaurant-landing-page-guide',
+    title: 'Restaurant Landing Page: How to Get More Reservations Online',
+    excerpt: 'Turn your restaurant\'s website into a reservation machine with these proven design strategies and must-have elements.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'startup-landing-page-guide',
+    title: 'Startup Landing Page: The Complete Guide to Launching with Traction',
+    excerpt: 'From validation to launch day — how to build a startup landing page that captures demand from day one.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'fitness-website-design',
+    title: 'Fitness Website Design: How to Get More Gym Members Online',
+    excerpt: 'Design a fitness website that converts visitors into members with free trial CTAs, class schedules, and results showcase.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'real-estate-landing-page',
+    title: 'Real Estate Landing Page: Get More Leads from Your Property Listings',
+    excerpt: 'Capture leads 24/7 with a real estate landing page optimized for property listings, agent profiles, and local SEO.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'nonprofit-website-best-practices',
+    title: 'Nonprofit Website Best Practices: How to Increase Online Donations',
+    excerpt: 'Design your nonprofit website for maximum impact with tiered donations, powerful stories, and frictionless giving.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'podcast-landing-page-guide',
+    title: 'Podcast Landing Page: How to Grow Your Audience Beyond Apple & Spotify',
+    excerpt: 'Own your audience with a podcast landing page that captures emails, showcases episodes, and drives subscriptions.',
+    date: 'May 2026',
+  },
+  {
     slug: 'best-landing-page-templates-2026',
     title: 'Best Landing Page Templates for 2026',
     excerpt: 'Discover the highest-converting landing page designs for SaaS, e-commerce, and apps this year.',

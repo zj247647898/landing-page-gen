@@ -123,7 +123,7 @@ const posts: Record<string, { title: string; content: string }> = {
 </ul>
 
 <h2>Our Templates</h2>
-<p>We offer 9 free landing page templates you can customize and export:</p>
+<p>We offer 15 landing page templates you can customize and export:</p>
 <ul>
 <li><strong>SaaS Modern:</strong> For software products and startups</li>
 <li><strong>E-Commerce Launch:</strong> For product drops and sales</li>
@@ -134,6 +134,12 @@ const posts: Record<string, { title: string; content: string }> = {
 <li><strong>Waitlist:</strong> For pre-launch signups</li>
 <li><strong>Portfolio:</strong> For creative professionals</li>
 <li><strong>Event:</strong> For conferences and meetups</li>
+<li><strong>Startup Launch:</strong> For early-stage startups with problem/solution framing</li>
+<li><strong>Restaurant / Café:</strong> For menus, reservations, and ambiance</li>
+<li><strong>Fitness / Gym:</strong> For classes, trainers, and memberships</li>
+<li><strong>Real Estate:</strong> For property listings and agent contacts</li>
+<li><strong>Nonprofit / Charity:</strong> For missions, impact, and donations</li>
+<li><strong>Podcast:</strong> For episodes, hosts, and subscriptions</li>
 </ul>
 
 <h2>How to Customize</h2>
@@ -336,6 +342,273 @@ const posts: Record<string, { title: string; content: string }> = {
 
 <h2>Create Your Portfolio</h2>
 <p>Our <a href="/editor/portfolio">Portfolio template</a> is designed to showcase your work and convert visitors into clients. Sections for projects, testimonials, services, and contact.</p>
+    `,
+  },
+  'restaurant-landing-page-guide': {
+    title: 'Restaurant Landing Page: How to Get More Reservations Online',
+    content: `
+<p class="lead">Your restaurant's landing page is your digital storefront. Here's how to turn visitors into diners.</p>
+
+<h2>Why Your Restaurant Needs a Landing Page</h2>
+<p>90% of diners research restaurants online before visiting. A dedicated landing page gives you control over that first impression. Unlike social media profiles, you own the experience and can optimize for reservations.</p>
+
+<h2>Essential Elements of a Restaurant Landing Page</h2>
+<h3>1. Mouth-Watering Hero Image</h3>
+<p>Your hero section should feature your most photogenic dish or your restaurant's ambiance. High-quality photography is non-negotiable — it's the digital equivalent of a window display.</p>
+
+<h3>2. Menu Highlights</h3>
+<p>Don't list your entire menu. Showcase 3-5 signature dishes with descriptions that sell the experience, not just the ingredients. "Slow-braised duck confit with truffle jus" beats "Duck — $38."</p>
+
+<h3>3. Easy Reservation System</h3>
+<p>Make booking a table take 30 seconds or less. Use OpenTable, Resy, or a simple phone number. The CTA should be above the fold.</p>
+
+<h3>4. Location & Hours</h3>
+<p>This seems obvious, but many restaurants bury this information. Put your address, phone, and hours where they're immediately visible.</p>
+
+<h3>5. Atmosphere Gallery</h3>
+<p>Show the dining experience — the interior, the plating, the team. People want to imagine themselves there.</p>
+
+<h2>Restaurant Landing Page Mistakes</h2>
+<ul>
+<li><strong>PDF menus:</strong> They don't work on mobile and hurt SEO. Use HTML instead.</li>
+<li><strong>No online ordering:</strong> If you offer takeout, make it one click away.</li>
+<li><strong>Slow loading images:</strong> Compress photos. 3 seconds is the max loading time.</li>
+<li><strong>Missing reviews:</strong> Embed Google or Yelp reviews as social proof.</li>
+</ul>
+
+<h2>Build Your Restaurant Page</h2>
+<p>Our <a href="/editor/restaurant">Restaurant template</a> includes menu highlights, reservation CTA, gallery section, and contact info — all mobile-responsive and optimized for local SEO. Customize it in 5 minutes.</p>
+    `,
+  },
+  'fitness-website-design': {
+    title: 'Fitness Website Design: How to Get More Gym Members Online',
+    content: `
+<p class="lead">Your fitness website is your 24/7 salesperson. Here's how to design it to convert visitors into members.</p>
+
+<h2>The Fitness Industry Is Competitive Online</h2>
+<p>With boutique gyms, big-box chains, and online fitness programs all competing for the same audience, your website needs to work harder than ever. The average gym loses 30-40% of members annually — your landing page is how you replace them.</p>
+
+<h2>Must-Have Elements for a Fitness Landing Page</h2>
+
+<h3>1. Free Trial Offer Above the Fold</h3>
+<p>"7-Day Free Trial" or "First Class Free" is the single highest-converting CTA in fitness. Make it the first thing visitors see. The psychology: lower commitment = higher signups.</p>
+
+<h3>2. Class Schedule Preview</h3>
+<p>Show your most popular classes with times. Visitors want to know if you offer what they want when they want it. Don't make them dig for the schedule.</p>
+
+<h3>3. Trainer Profiles</h3>
+<p>People join gyms for the trainers. Show their certifications, specialties, and personality. A photo and 2-sentence bio for each trainer builds connection before the first visit.</p>
+
+<h3>4. Membership Pricing</h3>
+<p>Be transparent. Hidden pricing creates distrust. Show 2-3 tiers with a clear recommendation for which one most people choose.</p>
+
+<h3>5. Before/After Results</h3>
+<p>Nothing sells fitness like results. Feature 3-5 member transformations with their permission. Include specific metrics ("lost 30 lbs in 6 months") not just photos.</p>
+
+<h2>Fitness Website SEO Tips</h2>
+<ul>
+<li><strong>Local keywords:</strong> "gym in [city]", "fitness classes near me", "personal trainer [neighborhood]"</li>
+<li><strong>Google Business Profile:</strong> Keep it updated with photos, hours, and class schedules</li>
+<li><strong>Blog content:</strong> "5 best exercises for [goal]", "what to eat before a workout"</li>
+<li><strong>Page speed:</strong> Your site must load in under 3 seconds on mobile</li>
+</ul>
+
+<h2>Create Your Fitness Website</h2>
+<p>Our <a href="/editor/fitness-gym">Fitness template</a> includes class schedules, trainer profiles, membership pricing, and a prominent free trial CTA — all designed to convert visitors into members.</p>
+    `,
+  },
+  'real-estate-landing-page': {
+    title: 'Real Estate Landing Page: Get More Leads from Your Property Listings',
+    content: `
+<p class="lead">In real estate, speed matters. The agent who responds first gets the client. Here's how your landing page can capture leads 24/7.</p>
+
+<h2>Why Real Estate Agents Need Landing Pages</h2>
+<p>Your brokerage website is not enough. It's generic, slow, and doesn't capture leads effectively. A dedicated landing page for each listing or service gives you:</p>
+<ul>
+<li>Higher conversion rates (23% vs 3% for general websites)</li>
+<li>Better Google Ads quality scores</li>
+<li>Targeted messaging for specific buyer personas</li>
+<li>Immediate lead capture without distractions</li>
+</ul>
+
+<h2>High-Converting Real Estate Landing Page Structure</h2>
+
+<h3>1. Hero with Search or Featured Listing</h3>
+<p>Either show a prominent property search bar or feature your best listing. The hero should communicate your market area and specialization ("Denver's #1 Luxury Home Expert").</p>
+
+<h3>2. Featured Listings</h3>
+<p>Show 3-6 properties with price, beds/baths, and square footage. High-quality photos are essential — listings with professional photos sell 32% faster.</p>
+
+<h3>3. Market Stats and Trust Signals</h3>
+<p>Include your key metrics:</p>
+<ul>
+<li>Homes sold (e.g., "200+ homes sold in 2025")</li>
+<li>Average days on market</li>
+<li>Client satisfaction rate</li>
+<li>Years of experience</li>
+</ul>
+
+<h3>4. Agent Profile</h3>
+<p>Real estate is a relationship business. Show your face, your credentials, and a brief bio. Include your direct phone number — not a generic office line.</p>
+
+<h3>5. Lead Capture Form</h3>
+<p>Keep it simple: Name, Email, Phone, "What are you looking for?" Offer something in return — a free home valuation, market report, or listing alerts.</p>
+
+<h2>Real Estate SEO Strategy</h2>
+<ul>
+<li><strong>Neighborhood pages:</strong> Create a page for each area you serve</li>
+<li><strong>Listing keywords:</strong> "[city] homes for sale", "[neighborhood] real estate"</li>
+<li><strong>Content marketing:</strong> "Best neighborhoods in [city]", "Moving to [city] guide"</li>
+</ul>
+
+<h2>Build Your Real Estate Page</h2>
+<p>Our <a href="/editor/real-estate">Real Estate template</a> features property listings, agent profile, market stats, and a prominent lead capture form. Mobile-optimized for buyers browsing on their phones.</p>
+    `,
+  },
+  'startup-landing-page-guide': {
+    title: 'Startup Landing Page: The Complete Guide to Launching with Traction',
+    content: `
+<p class="lead">Your startup's landing page is the difference between "launching to crickets" and "launching to a waitlist of 10,000." Here's how to build one that works.</p>
+
+<h2>The Startup Landing Page Playbook</h2>
+<p>The best startup launches follow a pattern: validate before building, build hype before launching, and capture demand from day one. Your landing page is the tool that makes all three possible.</p>
+
+<h2>Phase 1: Pre-Launch (Validation)</h2>
+<p>Before writing a single line of code, put up a landing page that describes your idea. Include:</p>
+<ul>
+<li>A clear problem statement ("Managing remote teams is chaotic")</li>
+<li>Your proposed solution ("One dashboard for everything")</li>
+<li>An email capture form ("Get early access")</li>
+</ul>
+<p>If you can't get 100 signups from a landing page, you won't get 100 customers from a product.</p>
+
+<h2>Phase 2: Launch Day</h2>
+<p>On launch day, your landing page needs to convert the traffic spike into users. Key elements:</p>
+
+<h3>Problem/Solution Framing</h3>
+<p>Start with the pain point your audience already feels. Then present your product as the answer. This creates an "aha moment" before they even try your product.</p>
+
+<h3>Social Proof</h3>
+<p>Even if you're new, you can show:</p>
+<ul>
+<li>Beta tester count</li>
+<li>Advisor or investor logos</li>
+<li>Press mentions</li>
+<li>Waitlist size from Phase 1</li>
+</ul>
+
+<h3>Early Adopter Pricing</h3>
+<p>Offer a launch discount with a deadline. "First 100 users get 50% off forever" creates urgency and rewards early supporters.</p>
+
+<h2>Phase 3: Post-Launch Optimization</h2>
+<ul>
+<li>A/B test your headline (it's worth 30%+ in conversion difference)</li>
+<li>Add customer testimonials as they come in</li>
+<li>Build case studies from your first 10 customers</li>
+<li>Optimize for SEO with blog content</li>
+</ul>
+
+<h2>Launch Your Startup Page</h2>
+<p>Our <a href="/editor/startup-launch">Startup Launch template</a> is built for exactly this — problem/solution framing, early adopter pricing with urgency, social proof sections, and clean CTA design. Ship it today.</p>
+    `,
+  },
+  'nonprofit-website-best-practices': {
+    title: 'Nonprofit Website Best Practices: How to Increase Online Donations',
+    content: `
+<p class="lead">Your nonprofit's website is your most powerful fundraising tool. Here's how to design it for maximum impact and donations.</p>
+
+<h2>Why Nonprofit Websites Underperform</h2>
+<p>Most nonprofit websites fail because they focus on the organization instead of the donor. They list programs, show team photos, and describe processes. But donors don't give to organizations — they give to outcomes.</p>
+
+<h2>The Nonprofit Landing Page Framework</h2>
+
+<h3>1. Lead with Impact, Not Process</h3>
+<p>Don't say "We run after-school programs." Say "Every $25 provides one week of tutoring for a child who's falling behind." Connect the donation to the outcome.</p>
+
+<h3>2. Show Real Numbers</h3>
+<p>Impact statistics are your strongest asset:</p>
+<ul>
+<li>"10,000 meals served this year"</li>
+<li>"95% of students improved their grades"</li>
+<li>"500 families housed since 2020"</li>
+</ul>
+<p>Big, bold numbers build credibility and emotional connection simultaneously.</p>
+
+<h3>3. Tell One Powerful Story</h3>
+<p>Statistics engage the mind; stories engage the heart. Feature one beneficiary's story with their photo (with permission). The story should follow: Before → Intervention → After.</p>
+
+<h3>4. Offer Specific Donation Amounts</h3>
+<p>Never use a blank "Enter amount" field. Offer 3 tiers with specific outcomes:</p>
+<ul>
+<li><strong>$25</strong> — Provides school supplies for one child</li>
+<li><strong>$100</strong> — Funds a month of after-school tutoring</li>
+<li><strong>$500</strong> — Sponsors a student for an entire semester</li>
+</ul>
+<p>This "anchoring" technique increases average donation size by 30-50%.</p>
+
+<h3>5. Reduce Friction</h3>
+<p>Every extra click or form field loses donors. Use:</p>
+<ul>
+<li>One-click donation (Apple Pay, Google Pay, PayPal)</li>
+<li>Recurring donation option (monthly donors are worth 4x one-time)</li>
+<li>No account creation required</li>
+<li>Thank-you page with social sharing buttons</li>
+</ul>
+
+<h2>SEO for Nonprofits</h2>
+<p>Target keywords donors actually search:</p>
+<ul>
+<li>"Donate to [cause] in [city]"</li>
+<li>"[cause] charity near me"</li>
+<li>"How to help [population]"</li>
+</ul>
+<p>Google Ad Grants gives nonprofits $10,000/month in free search ads. Apply immediately.</p>
+
+<h2>Create Your Nonprofit Page</h2>
+<p>Our <a href="/editor/nonprofit">Nonprofit template</a> is designed for maximum donation conversion — impact stats, story section, tiered donation amounts, and emotional design. Start raising more today.</p>
+    `,
+  },
+  'podcast-landing-page-guide': {
+    title: 'Podcast Landing Page: How to Grow Your Audience Beyond Apple & Spotify',
+    content: `
+<p class="lead">Relying only on podcast directories limits your growth. A dedicated landing page helps you own your audience and monetize smarter.</p>
+
+<h2>Why Podcasters Need a Landing Page</h2>
+<p>When someone discovers your podcast on social media, where do they go? If it's Apple Podcasts or Spotify, you lose control of the experience. A landing page gives you:</p>
+<ul>
+<li><strong>Direct relationship:</strong> Capture email addresses, not just followers</li>
+<li><strong>Monetization control:</strong> Sell sponsorships, merch, or premium content</li>
+<li><strong>SEO traffic:</strong> People search Google for podcast topics, not just podcast apps</li>
+<li><strong>Analytics:</strong> Know who's visiting, from where, and what they do</li>
+</ul>
+
+<h2>Essential Elements of a Podcast Landing Page</h2>
+
+<h3>1. Audio Player or Latest Episode</h3>
+<p>Let visitors listen immediately without leaving your site. An embedded player reduces friction and increases the chance they subscribe.</p>
+
+<h3>2. Subscribe Buttons for All Platforms</h3>
+<p>Link to Apple Podcasts, Spotify, Google Podcasts, YouTube, and any other platform where you're available. Make each button prominent and one-click.</p>
+
+<h3>3. Episode Archive</h3>
+<p>Show your latest 3-5 episodes with titles, descriptions, and play buttons. This shows consistency and helps new listeners find their starting point.</p>
+
+<h3>4. Host Bio</h3>
+<p>People connect with people. A brief host bio with photo establishes credibility and personality. Include your background, why you started the podcast, and what makes your perspective unique.</p>
+
+<h3>5. Email Capture</h3>
+<p>Offer something valuable in exchange for an email: episode guides, resource lists, or early access. This is how you build an audience you own.</p>
+
+<h2>Podcast SEO Strategy</h2>
+<ul>
+<li><strong>Episode pages:</strong> Each episode should have its own URL with a transcript</li>
+<li><strong>Long-tail keywords:</strong> "podcast about [topic]", "how to [skill] podcast"</li>
+<li><strong>Show notes:</strong> Write 300+ words per episode with relevant keywords</li>
+<li><strong>Guest cross-promotion:</strong> Link to guest websites and ask them to link back</li>
+</ul>
+
+<h2>Build Your Podcast Page</h2>
+<p>Our <a href="/editor/podcast">Podcast template</a> features a sleek dark theme with episode listings, subscribe buttons for all platforms, host section, and listener stats. Perfect for growing your show's audience.</p>
     `,
   },
 };

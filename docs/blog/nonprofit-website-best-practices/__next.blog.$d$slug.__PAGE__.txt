@@ -1,0 +1,63 @@
+1:"$Sreact.fragment"
+2:I[22016,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js","/landing-page-gen/_next/static/chunks/0ps9fr0wpgz6n.js"],""]
+3:I[72472,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js","/landing-page-gen/_next/static/chunks/0ps9fr0wpgz6n.js"],"Button"]
+4:I[5014,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js","/landing-page-gen/_next/static/chunks/0ps9fr0wpgz6n.js"],"default"]
+9:I[97367,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+5:T9d2,
+<p class="lead">Your nonprofit's website is your most powerful fundraising tool. Here's how to design it for maximum impact and donations.</p>
+
+<h2>Why Nonprofit Websites Underperform</h2>
+<p>Most nonprofit websites fail because they focus on the organization instead of the donor. They list programs, show team photos, and describe processes. But donors don't give to organizations — they give to outcomes.</p>
+
+<h2>The Nonprofit Landing Page Framework</h2>
+
+<h3>1. Lead with Impact, Not Process</h3>
+<p>Don't say "We run after-school programs." Say "Every $25 provides one week of tutoring for a child who's falling behind." Connect the donation to the outcome.</p>
+
+<h3>2. Show Real Numbers</h3>
+<p>Impact statistics are your strongest asset:</p>
+<ul>
+<li>"10,000 meals served this year"</li>
+<li>"95% of students improved their grades"</li>
+<li>"500 families housed since 2020"</li>
+</ul>
+<p>Big, bold numbers build credibility and emotional connection simultaneously.</p>
+
+<h3>3. Tell One Powerful Story</h3>
+<p>Statistics engage the mind; stories engage the heart. Feature one beneficiary's story with their photo (with permission). The story should follow: Before → Intervention → After.</p>
+
+<h3>4. Offer Specific Donation Amounts</h3>
+<p>Never use a blank "Enter amount" field. Offer 3 tiers with specific outcomes:</p>
+<ul>
+<li><strong>$25</strong> — Provides school supplies for one child</li>
+<li><strong>$100</strong> — Funds a month of after-school tutoring</li>
+<li><strong>$500</strong> — Sponsors a student for an entire semester</li>
+</ul>
+<p>This "anchoring" technique increases average donation size by 30-50%.</p>
+
+<h3>5. Reduce Friction</h3>
+<p>Every extra click or form field loses donors. Use:</p>
+<ul>
+<li>One-click donation (Apple Pay, Google Pay, PayPal)</li>
+<li>Recurring donation option (monthly donors are worth 4x one-time)</li>
+<li>No account creation required</li>
+<li>Thank-you page with social sharing buttons</li>
+</ul>
+
+<h2>SEO for Nonprofits</h2>
+<p>Target keywords donors actually search:</p>
+<ul>
+<li>"Donate to [cause] in [city]"</li>
+<li>"[cause] charity near me"</li>
+<li>"How to help [population]"</li>
+</ul>
+<p>Google Ad Grants gives nonprofits $10,000/month in free search ads. Apply immediately.</p>
+
+<h2>Create Your Nonprofit Page</h2>
+<p>Our <a href="/editor/nonprofit">Nonprofit template</a> is designed for maximum donation conversion — impact stats, story section, tiered donation amounts, and emotional design. Start raising more today.</p>
+    0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-gradient-to-b from-slate-50 to-white py-24","children":["$","div",null,{"className":"container mx-auto px-4 max-w-3xl","children":[["$","$L2",null,{"href":"/blog","children":["$","$L3",null,{"data-slot":"button","className":"group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 mb-8","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left w-4 h-4 mr-2"}],"Back to Blog"]}]}],["$","article",null,{"className":"prose prose-lg max-w-none","children":[["$","h1",null,{"className":"text-4xl font-bold mb-6","children":"Nonprofit Website Best Practices: How to Increase Online Donations"}],["$","div",null,{"className":"text-muted-foreground leading-relaxed space-y-4","dangerouslySetInnerHTML":{"__html":"$5"}}]]}],"$L6"]}]}],["$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"JAVc2BnZ8d6GqLejI4aQs"}
+6:["$","div",null,{"className":"mt-12 p-6 bg-indigo-50 rounded-xl text-center","children":[["$","h3",null,{"className":"font-bold text-lg mb-2","children":"Ready to build your landing page?"}],["$","p",null,{"className":"text-muted-foreground mb-4","children":"Create and export professional landing pages in minutes."}],["$","$L2",null,{"href":"/","children":["$","$L3",null,{"data-slot":"button","className":"group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground [a]:hover:bg-primary/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2","children":"Start Building for Free"}]}]]}]
+7:["$","script","script-0",{"src":"/landing-page-gen/_next/static/chunks/0ps9fr0wpgz6n.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null
