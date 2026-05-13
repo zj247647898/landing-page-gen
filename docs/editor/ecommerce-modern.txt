@@ -1,0 +1,162 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+3:I[39756,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[37457,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+6:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+a:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+c:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+e:I[68027,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0fmrxwgeqyzvy.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.0.q-h669a_dqa.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.16t1db8_9y2o~.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","editor","ecommerce-modern"],"q":"","i":false,"f":[[["",{"children":["editor",{"children":[["id","ecommerce-modern","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0fmrxwgeqyzvy.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/13h-0fd.p-1ga.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","header",null,{"className":"border-b bg-white/80 backdrop-blur-md sticky top-0 z-50","children":["$","div",null,{"className":"container mx-auto px-4 h-16 flex items-center justify-between","children":[["$","$L2",null,{"href":"/","className":"font-bold text-xl bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent","children":"LP Gen"}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L2",null,{"href":"/","className":"text-sm font-medium text-muted-foreground hover:text-foreground transition-colors","children":"Templates"}],["$","$L2",null,{"href":"/toolkit","className":"text-sm font-medium text-muted-foreground hover:text-foreground transition-colors","children":"Toolkit"}],["$","$L2",null,{"href":"/services","className":"text-sm font-medium text-muted-foreground hover:text-foreground transition-colors","children":"Services"}],["$","$L2",null,{"href":"/pricing","className":"text-sm font-medium text-muted-foreground hover:text-foreground transition-colors","children":"Pricing"}]]}]]}]}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/_next/static/chunks/09pf3dgzc5syo.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0y1.oju~m.t7q.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0a5n0yey5agex.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null],["$","$1","h",{"children":[null,["$","$La",null,{"children":"$Lb"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Ld"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$e",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0fmrxwgeqyzvy.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"H5hG03-qzr8FlxXMjMqYE"}
+f:[]
+9:"$Wf"
+10:I[27381,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/09pf3dgzc5syo.js","/_next/static/chunks/0y1.oju~m.t7q.js","/_next/static/chunks/0a5n0yey5agex.js"],"default"]
+11:T1883,<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Wireless Headphones | LuxeBrand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1f2937; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .btn-primary { display: inline-block; padding: 18px 40px; background: #f59e0b; color: #0f172a; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px; transition: all 0.3s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px #f59e0b60; }
+    
+    .navbar { background: #0f172a; color: white; padding: 16px 0; }
+    .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 24px; font-weight: 800; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 500; }
+    .nav-links a:hover { color: white; }
+    
+    .hero { padding: 80px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .hero h1 { font-size: 52px; font-weight: 800; line-height: 1.1; margin-bottom: 24px; }
+    .hero p { font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+    .price-tag { margin-bottom: 24px; }
+    .price-tag .current { font-size: 48px; font-weight: 800; color: #f59e0b; }
+    .price-tag .original { font-size: 24px; text-decoration: line-through; color: rgba(255,255,255,0.5); margin-left: 12px; }
+    .hero-image { background: rgba(255,255,255,0.1); border-radius: 24px; height: 400px; display: flex; align-items: center; justify-content: center; font-size: 120px; }
+    
+    .features { padding: 80px 0; background: #f8fafc; }
+    .section-title { text-align: center; font-size: 36px; font-weight: 700; margin-bottom: 48px; }
+    .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .feature-box { text-align: center; padding: 32px; background: white; border-radius: 16px; }
+    .feature-box .icon { font-size: 40px; margin-bottom: 16px; }
+    .feature-box h3 { font-size: 16px; font-weight: 600; }
+    
+    .testimonials { padding: 80px 0; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; max-width: 800px; margin: 0 auto; }
+    .testimonial-card { padding: 32px; background: #f8fafc; border-radius: 16px; border-left: 4px solid #f59e0b; }
+    .testimonial-card p { font-size: 18px; font-style: italic; margin-bottom: 16px; }
+    .testimonial-card .author { font-weight: 600; color: #0f172a; }
+    
+    .guarantee { padding: 60px 0; background: #f59e0b15; text-align: center; }
+    .guarantee h2 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+    .guarantee p { color: #6b7280; margin-bottom: 24px; }
+    
+    .footer { padding: 32px 0; text-align: center; color: #9ca3af; background: #0f172a; color: rgba(255,255,255,0.6); }
+    
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 36px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">LuxeBrand</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#buy">Buy Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1>Experience Sound Like Never Before</h1>
+          <p>Industry-leading noise cancellation, 30-hour battery life, and studio-quality audio in a design that feels as good as it sounds.</p>
+          <div class="price-tag">
+            <span class="current">$299</span>
+            <span class="original">$399</span>
+          </div>
+          <a href="#checkout" class="btn-primary">Buy Now - Free Shipping</a>
+        </div>
+        <div class="hero-image">🎧</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Why choose Premium Wireless Headphones?</h2>
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="icon">🔇</div>
+          <h3>Active Noise Cancellation</h3>
+        </div>
+        <div class="feature-box">
+          <div class="icon">🔋</div>
+          <h3>30-Hour Battery Life</h3>
+        </div>
+        <div class="feature-box">
+          <div class="icon">☁️</div>
+          <h3>Premium Comfort Fit</h3>
+        </div>
+        <div class="feature-box">
+          <div class="icon">🎵</div>
+          <h3>Spatial Audio</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <h2 class="section-title">What our customers say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"Best headphones I have ever owned. The noise cancellation is unreal."</p>
+          <div class="author">— Sarah M.</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Worth every penny. Battery lasts forever and sound quality is incredible."</p>
+          <div class="author">— James K.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guarantee" id="buy">
+    <div class="container">
+      <h2>30-Day Money-Back Guarantee</h2>
+      <p>Not satisfied? Get a full refund within 30 days. No questions asked.</p>
+      <a href="#checkout" class="btn-primary">Buy Now - Free Shipping</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 LuxeBrand. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>5:["$","$L10",null,{"templateId":"ecommerce-modern","templateName":"E-Commerce Launch","templateDescription":"Product-focused landing page with hero, product showcase, testimonials, and buy CTA","templateCategory":"E-Commerce","fields":[{"id":"brandName","label":"Brand Name","type":"text","defaultValue":"LuxeBrand","required":true},{"id":"productName","label":"Product Name","type":"text","defaultValue":"Premium Wireless Headphones","required":true},{"id":"headline","label":"Main Headline","type":"text","defaultValue":"Experience Sound Like Never Before","required":true},{"id":"subheadline","label":"Subheadline","type":"textarea","defaultValue":"Industry-leading noise cancellation, 30-hour battery life, and studio-quality audio in a design that feels as good as it sounds.","required":true},{"id":"price","label":"Product Price","type":"text","defaultValue":"$$299","required":true},{"id":"originalPrice","label":"Original Price (for strikethrough)","type":"text","defaultValue":"$$399","required":true},{"id":"ctaText","label":"CTA Button","type":"text","defaultValue":"Buy Now - Free Shipping","required":true},{"id":"ctaLink","label":"Buy Link","type":"text","defaultValue":"#checkout","required":true},{"id":"primaryColor","label":"Primary Color","type":"color","defaultValue":"#0f172a","required":true},{"id":"accentColor","label":"Accent Color","type":"color","defaultValue":"#f59e0b","required":true},{"id":"feature1","label":"Feature 1","type":"text","defaultValue":"Active Noise Cancellation","required":true},{"id":"feature2","label":"Feature 2","type":"text","defaultValue":"30-Hour Battery Life","required":true},{"id":"feature3","label":"Feature 3","type":"text","defaultValue":"Premium Comfort Fit","required":true},{"id":"feature4","label":"Feature 4","type":"text","defaultValue":"Spatial Audio","required":true},{"id":"testimonial1","label":"Testimonial 1","type":"textarea","defaultValue":"Best headphones I have ever owned. The noise cancellation is unreal.","required":true},{"id":"author1","label":"Author 1","type":"text","defaultValue":"Sarah M.","required":true},{"id":"testimonial2","label":"Testimonial 2","type":"textarea","defaultValue":"Worth every penny. Battery lasts forever and sound quality is incredible.","required":true},{"id":"author2","label":"Author 2","type":"text","defaultValue":"James K.","required":true},{"id":"guarantee","label":"Guarantee Text","type":"text","defaultValue":"30-Day Money-Back Guarantee","required":true},{"id":"footerText","label":"Footer","type":"text","defaultValue":"© 2026 LuxeBrand. All rights reserved.","required":true}],"initialHtml":"$11"}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+12:I[27201,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+8:null
+d:[["$","title","0",{"children":"Landing Page Generator - Build & Export in Minutes"}],["$","meta","1",{"name":"description","content":"Create beautiful, high-converting landing pages without coding. Choose a template, customize, and export clean HTML. One-time payment, keep forever."}],["$","meta","2",{"name":"keywords","content":"landing page builder,landing page generator,HTML exporter,no code,SaaS template"}],["$","meta","3",{"property":"og:title","content":"Landing Page Generator"}],["$","meta","4",{"property":"og:description","content":"Build beautiful landing pages in minutes"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Landing Page Generator"}],["$","meta","8",{"name":"twitter:description","content":"Build beautiful landing pages in minutes"}],["$","link","9",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L12","10",{}]]

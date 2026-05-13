@@ -1,0 +1,105 @@
+1:"$Sreact.fragment"
+2:I[27381,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/09pf3dgzc5syo.js","/_next/static/chunks/0y1.oju~m.t7q.js","/_next/static/chunks/0a5n0yey5agex.js"],"default"]
+8:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:Tf98,<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitTrack Pro - Your Personal Fitness Coach</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn-ios,.btn-android{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:600;transition:all .3s}
+.btn-ios{background:#000;color:#fff}
+.btn-android{background:#10b981;color:#fff}
+.btn-ios:hover,.btn-android:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+
+.hero{padding:120px 0 80px;background:linear-gradient(135deg,#10b98115,#fff 60%);text-align:center}
+.hero h1{font-size:56px;font-weight:800;line-height:1.1;margin-bottom:20px}
+.hero p{font-size:20px;color:#6b7280;max-width:600px;margin:0 auto 32px}
+.app-icon{width:120px;height:120px;background:linear-gradient(135deg,#10b981,#059669);border-radius:28px;margin:0 auto 32px;display:flex;align-items:center;justify-content:center;font-size:60px;box-shadow:0 20px 60px #10b98140}
+.rating{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:32px}
+.stars{color:#f59e0b;font-size:20px}
+
+.features{padding:80px 0;background:#f8fafc}
+.section-title{text-align:center;font-size:36px;font-weight:700;margin-bottom:48px}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.feature-card{padding:40px;background:#fff;border-radius:20px;text-align:center}
+.feature-icon{width:64px;height:64px;background:#10b98115;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:28px}
+.feature-card h3{font-size:20px;font-weight:700;margin-bottom:12px}
+.feature-card p{color:#6b7280}
+
+.download{padding:80px 0;text-align:center;background:#10b981}
+.download h2{color:#fff;font-size:36px;font-weight:700;margin-bottom:16px}
+.download p{color:rgba(255,255,255,.8);margin-bottom:32px}
+.download-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+.footer{padding:32px 0;text-align:center;color:#9ca3af}
+
+@media(max-width:768px){
+.hero h1{font-size:36px}
+.features-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="container">
+<div class="app-icon">💪</div>
+<h1>FitTrack Pro</h1>
+<p>Track workouts, monitor nutrition, and achieve your fitness goals with AI-powered personalized coaching.</p>
+<div class="rating"><span class="stars">★★★★★</span><span><strong>4.9</strong> (12,000+ reviews)</span></div>
+<div class="download-buttons">
+<a href="#" class="btn-ios">📱 Download on App Store</a>
+<a href="#" class="btn-android">🤖 Get it on Google Play</a>
+</div>
+</div>
+</section>
+
+<section class="features">
+<div class="container">
+<h2 class="section-title">Everything you need</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">🤖</div>
+<h3>AI Workout Plans</h3>
+<p>Personalized routines that adapt to your progress</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🥗</div>
+<h3>Nutrition Tracking</h3>
+<p>Log meals and get smart recommendations</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📊</div>
+<h3>Progress Analytics</h3>
+<p>Visual charts and insights to keep you motivated</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="download">
+<div class="container">
+<h2>Start your journey today</h2>
+<p>Join millions of users achieving their fitness goals</p>
+<div class="download-buttons">
+<a href="#" class="btn-ios">📱 App Store</a>
+<a href="#" class="btn-android">🤖 Google Play</a>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container"><p>© 2026 FitTrack Pro. All rights reserved.</p></div>
+</footer>
+</body>
+</html>0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"templateId":"app-launch","templateName":"App Launch","templateDescription":"Mobile app landing page with download CTA, feature highlights, and app store buttons","templateCategory":"App","fields":[{"id":"appName","label":"App Name","type":"text","defaultValue":"FitTrack Pro","required":true},{"id":"tagline","label":"Tagline","type":"text","defaultValue":"Your Personal Fitness Coach","required":true},{"id":"description","label":"Description","type":"textarea","defaultValue":"Track workouts, monitor nutrition, and achieve your fitness goals with AI-powered personalized coaching.","required":true},{"id":"primaryColor","label":"Primary Color","type":"color","defaultValue":"#10b981","required":true},{"id":"appStoreLink","label":"App Store Link","type":"text","defaultValue":"#","required":true},{"id":"playStoreLink","label":"Play Store Link","type":"text","defaultValue":"#","required":true},{"id":"feature1","label":"Feature 1","type":"text","defaultValue":"AI Workout Plans","required":true},{"id":"feature1Desc","label":"Feature 1 Desc","type":"textarea","defaultValue":"Personalized routines that adapt to your progress","required":true},{"id":"feature2","label":"Feature 2","type":"text","defaultValue":"Nutrition Tracking","required":true},{"id":"feature2Desc","label":"Feature 2 Desc","type":"textarea","defaultValue":"Log meals and get smart recommendations","required":true},{"id":"feature3","label":"Feature 3","type":"text","defaultValue":"Progress Analytics","required":true},{"id":"feature3Desc","label":"Feature 3 Desc","type":"textarea","defaultValue":"Visual charts and insights to keep you motivated","required":true},{"id":"rating","label":"App Rating","type":"text","defaultValue":"4.9","required":true},{"id":"reviews","label":"Review Count","type":"text","defaultValue":"12,000+","required":true},{"id":"footer","label":"Footer Text","type":"text","defaultValue":"© 2026 FitTrack Pro. All rights reserved.","required":true}],"initialHtml":"$3"}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"H5hG03-qzr8FlxXMjMqYE"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/09pf3dgzc5syo.js","async":true}]
+5:["$","script","script-1",{"src":"/_next/static/chunks/0y1.oju~m.t7q.js","async":true}]
+6:["$","script","script-2",{"src":"/_next/static/chunks/0a5n0yey5agex.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

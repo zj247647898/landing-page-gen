@@ -1,0 +1,109 @@
+1:"$Sreact.fragment"
+2:I[27381,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/09pf3dgzc5syo.js","/_next/static/chunks/0y1.oju~m.t7q.js","/_next/static/chunks/0a5n0yey5agex.js"],"default"]
+8:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:Tfc9,<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevSummit 2026 - The Ultimate Developer Conference</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn-primary{display:inline-block;padding:18px 40px;background:#8b5cf6;color:#fff;text-decoration:none;border-radius:8px;font-weight:700;transition:all .3s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 40px #8b5cf650}
+
+.hero{padding:120px 0 80px;text-align:center;background:linear-gradient(135deg,#8b5cf615,#fff 60%)}
+.hero-badge{display:inline-block;padding:8px 20px;background:#8b5cf615;color:#8b5cf6;border-radius:100px;font-size:14px;font-weight:600;margin-bottom:24px}
+.hero h1{font-size:56px;font-weight:800;line-height:1.1;margin-bottom:16px}
+.hero .meta{font-size:20px;color:#6b7280;margin-bottom:32px}
+.hero .meta span{margin:0 12px}
+
+.stats{display:flex;gap:48px;justify-content:center;margin-top:48px}
+.stat{text-align:center}
+.stat .number{font-size:36px;font-weight:800;color:#8b5cf6}
+.stat .label{color:#6b7280;font-size:14px}
+
+.speakers{padding:80px 0;background:#f8fafc}
+.section-title{text-align:center;font-size:32px;font-weight:700;margin-bottom:48px}
+.speakers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:800px;margin:0 auto}
+.speaker{text-align:center}
+.speaker-avatar{width:120px;height:120px;background:linear-gradient(135deg,#8b5cf6,#a78bfa);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:48px;color:#fff}
+.speaker h3{font-size:18px;font-weight:700}
+.speaker p{color:#6b7280;font-size:14px}
+
+.tickets{padding:80px 0;text-align:center}
+.ticket-card{display:inline-block;padding:48px 64px;background:#f8fafc;border-radius:24px}
+.ticket-card .price{font-size:48px;font-weight:800;color:#8b5cf6}
+.ticket-card .original{font-size:20px;text-decoration:line-through;color:#9ca3af;margin-left:12px}
+.ticket-card .period{color:#6b7280;margin:8px 0 24px}
+
+.footer{padding:40px 0;text-align:center;color:#9ca3af;font-size:14px}
+
+@media(max-width:768px){
+.hero h1{font-size:32px}
+.speakers-grid{grid-template-columns:1fr}
+.stats{flex-direction:column;gap:24px}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="container">
+<div class="hero-badge">📅 October 15-17, 2026</div>
+<h1>DevSummit 2026</h1>
+<div class="meta"><span>📍 San Francisco, CA</span><span>🎤 50+ Speakers</span><span>🛠️ 20+ Workshops</span></div>
+<a href="#tickets" class="btn-primary">Get Tickets</a>
+<div class="stats">
+<div class="stat"><div class="number">5,000+</div><div class="label">Attendees</div></div>
+<div class="stat"><div class="number">50+</div><div class="label">Speakers</div></div>
+<div class="stat"><div class="number">20+</div><div class="label">Workshops</div></div>
+</div>
+</div>
+</section>
+
+<section class="speakers">
+<div class="container">
+<h2 class="section-title">Featured Speakers</h2>
+<div class="speakers-grid">
+<div class="speaker">
+<div class="speaker-avatar">👩‍💼</div>
+<h3>Sarah Chen</h3>
+<p>VP Engineering, Netflix</p>
+</div>
+<div class="speaker">
+<div class="speaker-avatar">👨‍💼</div>
+<h3>Marcus Johnson</h3>
+<p>CTO, Stripe</p>
+</div>
+<div class="speaker">
+<div class="speaker-avatar">👩‍💻</div>
+<h3>Aisha Patel</h3>
+<p>Founder, Vercel</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="tickets">
+<div class="container">
+<div class="ticket-card">
+<div><span class="price">$199</span><span class="original">$299</span></div>
+<div class="period">Early Bird Price (Limited)</div>
+<a href="#tickets" class="btn-primary">Get Tickets</a>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container"><p>© 2026 DevSummit. All rights reserved.</p></div>
+</footer>
+</body>
+</html>0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"templateId":"event","templateName":"Event / Conference","templateDescription":"Event landing page with schedule, speakers, sponsors, and ticket CTA","templateCategory":"Event","fields":[{"id":"eventName","label":"Event Name","type":"text","defaultValue":"DevSummit 2026","required":true},{"id":"tagline","label":"Tagline","type":"text","defaultValue":"The Ultimate Developer Conference","required":true},{"id":"date","label":"Event Date","type":"text","defaultValue":"October 15-17, 2026","required":true},{"id":"location","label":"Location","type":"text","defaultValue":"San Francisco, CA","required":true},{"id":"primaryColor","label":"Primary Color","type":"color","defaultValue":"#8b5cf6","required":true},{"id":"ctaText","label":"CTA Text","type":"text","defaultValue":"Get Tickets","required":true},{"id":"ctaLink","label":"Ticket Link","type":"text","defaultValue":"#tickets","required":true},{"id":"attendees","label":"Expected Attendees","type":"text","defaultValue":"5,000+","required":true},{"id":"speakers","label":"Speaker Count","type":"text","defaultValue":"50+","required":true},{"id":"workshops","label":"Workshop Count","type":"text","defaultValue":"20+","required":true},{"id":"speaker1","label":"Speaker 1","type":"text","defaultValue":"Sarah Chen","required":true},{"id":"speaker1Title","label":"Speaker 1 Title","type":"text","defaultValue":"VP Engineering, Netflix","required":true},{"id":"speaker2","label":"Speaker 2","type":"text","defaultValue":"Marcus Johnson","required":true},{"id":"speaker2Title","label":"Speaker 2 Title","type":"text","defaultValue":"CTO, Stripe","required":true},{"id":"speaker3","label":"Speaker 3","type":"text","defaultValue":"Aisha Patel","required":true},{"id":"speaker3Title","label":"Speaker 3 Title","type":"text","defaultValue":"Founder, Vercel","required":true},{"id":"ticketPrice","label":"Ticket Price","type":"text","defaultValue":"$$299","required":true},{"id":"earlyBird","label":"Early Bird Price","type":"text","defaultValue":"$$199","required":true},{"id":"footer","label":"Footer","type":"text","defaultValue":"© 2026 DevSummit. All rights reserved.","required":true}],"initialHtml":"$3"}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"H5hG03-qzr8FlxXMjMqYE"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/09pf3dgzc5syo.js","async":true}]
+5:["$","script","script-1",{"src":"/_next/static/chunks/0y1.oju~m.t7q.js","async":true}]
+6:["$","script","script-2",{"src":"/_next/static/chunks/0a5n0yey5agex.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null
