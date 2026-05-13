@@ -4,6 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Check, Sparkles, Mail } from 'lucide-react';
 import { PAYMENT_CONFIG } from '@/lib/payment';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pricing — One-Time Payment, Keep Forever',
+  description: 'Pro Plan ¥199 for all 9 templates and HTML export. Agency Plan ¥699 with source code. No subscription.',
+};
 
 const plans = [
   {

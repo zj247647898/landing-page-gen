@@ -3,6 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Check, ArrowRight, Zap } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Developer Toolkit — SEO, Competitor & Outreach Automation Scripts',
+  description: '4 Python automation tools for SEO audits, competitor analysis, email outreach, and landing page optimization. From $49. No dependencies.',
+};
 
 const tools = [
   {

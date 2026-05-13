@@ -3,6 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Custom Development Services — Landing Pages, MVPs & Full-Stack Apps',
+  description: 'Hire a developer for your next project. Custom landing pages from ¥3,499, MVP development from ¥13,999. Fixed pricing, 7-day delivery.',
+};
 import { Check, ArrowRight, Zap, Clock, Shield, Code, Palette, Rocket } from 'lucide-react';
 
 const services = [

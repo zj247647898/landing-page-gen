@@ -14,13 +14,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Landing Page Generator - Build & Export in Minutes",
-  description: "Create beautiful, high-converting landing pages without coding. Choose a template, customize, and export clean HTML. One-time payment, keep forever.",
-  keywords: ["landing page builder", "landing page generator", "HTML exporter", "no code", "SaaS template"],
+  title: {
+    default: "LP Gen — Landing Page Generator | Build & Export in 5 Minutes",
+    template: "%s | LP Gen",
+  },
+  description: "Create beautiful, high-converting landing pages without coding. 9 templates, live preview, export clean HTML. One-time payment ¥199, keep forever.",
+  keywords: ["landing page builder", "landing page generator", "HTML exporter", "no code", "SaaS template", "landing page templates", "free landing page", "HTML template", "landing page maker"],
   openGraph: {
-    title: "Landing Page Generator",
-    description: "Build beautiful landing pages in minutes",
+    title: "LP Gen — Ship your landing page in 5 minutes",
+    description: "9 templates. Live preview. Export clean HTML. No coding needed.",
     type: "website",
+    url: "https://zj247647898.github.io/landing-page-gen",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LP Gen — Landing Page Generator",
+    description: "Ship your landing page in 5 minutes. No coding.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -40,21 +53,21 @@ export default function RootLayout({
             <Link href="/" className="font-bold text-xl bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
               LP Gen
             </Link>
-            <nav className="flex items-center gap-6">
-              <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <nav className="flex items-center gap-2 md:gap-6">
+              <Link href="/" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Templates
               </Link>
-              <Link href="/toolkit" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/toolkit" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Toolkit
               </Link>
-              <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/services" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Services
               </Link>
-              <Link href="/free-seo-audit" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/free-seo-audit" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Free Audit
               </Link>
-              <Link href="/pay" className="text-sm font-medium bg-indigo-600 text-white px-4 py-1.5 rounded-md hover:bg-indigo-700 transition-colors">
-                Get Pro — ¥199
+              <Link href="/pay" className="text-sm font-medium bg-indigo-600 text-white px-3 md:px-4 py-1.5 rounded-md hover:bg-indigo-700 transition-colors">
+                Get Pro
               </Link>
             </nav>
           </div>

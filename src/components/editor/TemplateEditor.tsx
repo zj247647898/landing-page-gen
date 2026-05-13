@@ -131,10 +131,12 @@ export default function TemplateEditor({
     }
   };
 
+  const [mobileTab, setMobileTab] = useState<'edit' | 'preview'>('edit');
+
   return (
-    <div className="flex h-[calc(100vh-80px)] gap-4 p-4">
+    <div className="flex flex-col md:flex-row h-[calc(100vh-80px)] md:gap-4 p-2 md:p-4">
       {/* Editor Panel */}
-      <Card className="w-[400px] flex-shrink-0 flex flex-col overflow-hidden">
+      <Card className="w-full md:w-[400px] flex-shrink-0 flex flex-col overflow-hidden mb-2 md:mb-0">
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <CardTitle className="text-lg">{templateName}</CardTitle>
@@ -158,44 +160,51 @@ export default function TemplateEditor({
         </CardContent>
         <Separator />
         <div className="p-4 space-y-2">
-          <Button
-            className="w-full"
-            onClick={() => setShowPreview(!showPreview)}
-            variant="outline"
-          >
-            <Eye className="w-4 h-4 mr-2" />
-            {showPreview ? 'Hide Preview' : 'Show Preview'}
-          </Button>
-          <Button
-            className="w-full"
-            onClick={handleExport}
-            disabled={exporting || !canExport}
-          >
-            {canExport ? (
-              exporting ? (
-                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              ) : exported ? (
-                <Check className="w-4 h-4 mr-2" />
+          {/* Mobile tab toggle */}
+          <div className="flex md:hidden gap-2 mb-2">
+            <Button size="sm" variant={mobileTab === 'edit' ? 'default' : 'outline'} onClick={() => setMobileTab('edit')} className="flex-1">Edit</Button>
+            <Button size="sm" variant={mobileTab === 'preview' ? 'default' : 'outline'} onClick={() => setMobileTab('preview')} className="flex-1">Preview</Button>
+          </div>
+          <div className={mobileTab === 'preview' ? 'hidden md:block' : ''}>
+            <Button
+              className="w-full"
+              onClick={() => setShowPreview(!showPreview)}
+              variant="outline"
+            >
+              <Eye className="w-4 h-4 mr-2" />
+              {showPreview ? 'Hide Preview' : 'Show Preview'}
+            </Button>
+            <Button
+              className="w-full mt-2"
+              onClick={handleExport}
+              disabled={exporting || !canExport}
+            >
+              {canExport ? (
+                exporting ? (
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                ) : exported ? (
+                  <Check className="w-4 h-4 mr-2" />
+                ) : (
+                  <Download className="w-4 h-4 mr-2" />
+                )
               ) : (
-                <Download className="w-4 h-4 mr-2" />
-              )
-            ) : (
-              <Lock className="w-4 h-4 mr-2" />
+                <Lock className="w-4 h-4 mr-2" />
+              )}
+              {!canExport ? 'Pro Required' : exporting ? 'Exporting...' : exported ? 'Downloaded!' : 'Export HTML'}
+            </Button>
+            {!canExport && (
+              <Link href="/pay" className="block mt-2">
+                <Button variant="outline" className="w-full text-indigo-600 border-indigo-600">
+                  Upgrade to Pro — ¥199
+                </Button>
+              </Link>
             )}
-            {!canExport ? 'Pro Required' : exporting ? 'Exporting...' : exported ? 'Downloaded!' : 'Export HTML'}
-          </Button>
-          {!canExport && (
-            <Link href="/pay" className="block">
-              <Button variant="outline" className="w-full text-indigo-600 border-indigo-600">
-                Upgrade to Pro — ¥199
-              </Button>
-            </Link>
-          )}
+          </div>
         </div>
       </Card>
 
-      {/* Preview Panel */}
-      <Card className="flex-1 flex flex-col overflow-hidden">
+      {/* Preview Panel - hidden on mobile when editing, shown when preview tab selected */}
+      <Card className={`flex-1 flex flex-col overflow-hidden ${mobileTab === 'edit' ? 'hidden md:flex' : 'flex'}`}>
         <CardHeader className="pb-3">
           <CardTitle className="text-lg">Live Preview</CardTitle>
         </CardHeader>
