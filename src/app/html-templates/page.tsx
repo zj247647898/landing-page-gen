@@ -46,7 +46,11 @@ export default function HtmlTemplatesPage() {
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="outline">{t.category}</Badge>
-                    {t.free && <Badge className="bg-green-100 text-green-700">FREE</Badge>}
+                    {t.free ? (
+                      <Badge className="bg-green-100 text-green-700">FREE</Badge>
+                    ) : (
+                      <Badge className="bg-indigo-100 text-indigo-700">PRO</Badge>
+                    )}
                   </div>
                   <CardTitle className="text-lg">{t.name}</CardTitle>
                 </CardHeader>
@@ -54,7 +58,7 @@ export default function HtmlTemplatesPage() {
                   <p className="text-sm text-muted-foreground">{t.desc}</p>
                   <Link href={`/editor/${t.id}`}>
                     <Button className="w-full" variant={t.free ? 'default' : 'outline'}>
-                      {t.free ? 'Try Free' : 'Use Template'} <ArrowRight className="w-4 h-4 ml-1" />
+                      {t.free ? 'Try Free' : 'Preview (Pro)'} <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
                   </Link>
                 </CardContent>

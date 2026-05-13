@@ -100,15 +100,17 @@ export default function Home() {
                     <Badge variant="secondary" className="bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs">
                       {template.category}
                     </Badge>
-                    {template.id === 'saas-modern' && (
+                    {template.id === 'saas-modern' ? (
                       <Badge className="bg-white/90 text-green-700 text-xs">FREE</Badge>
+                    ) : (
+                      <Badge className="bg-white/90 text-indigo-700 text-xs">PRO</Badge>
                     )}
                   </div>
                   <div className="text-4xl mb-4 opacity-90">{iconMap[template.id]}</div>
                   <h3 className="text-2xl font-bold text-white mb-1">{template.name}</h3>
                   <p className="text-white/80 text-sm">{template.description}</p>
                   <div className="mt-4 flex items-center text-white/70 text-sm group-hover:text-white transition-colors">
-                    <span className="font-medium">{template.id === 'saas-modern' ? 'Try free' : 'Use template'}</span>
+                    <span className="font-medium">{template.id === 'saas-modern' ? 'Try free' : 'Pro'}</span>
                     <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                   </div>
                 </div>
@@ -119,7 +121,10 @@ export default function Home() {
             <div className="mt-8 grid md:grid-cols-3 lg:grid-cols-5 gap-3 max-w-6xl mx-auto">
               {rest.map((template) => (
                 <Link key={template.id} href={`/editor/${template.id}`} className="group">
-                  <div className={`rounded-xl bg-gradient-to-br ${gradientMap[template.id] || 'from-indigo-500 to-violet-500'} p-4 transition-all hover:scale-[1.03] hover:shadow-lg`}>
+                  <div className={`relative rounded-xl bg-gradient-to-br ${gradientMap[template.id] || 'from-indigo-500 to-violet-500'} p-4 transition-all hover:scale-[1.03] hover:shadow-lg`}>
+                    {template.id !== 'saas-modern' && (
+                      <span className="absolute top-2 right-2 text-[10px] font-bold bg-white/90 text-indigo-700 px-1.5 py-0.5 rounded">PRO</span>
+                    )}
                     <div className="text-lg mb-1">{iconMap[template.id]}</div>
                     <div className="font-semibold text-white text-sm">{template.name}</div>
                     <div className="text-white/70 text-xs">{template.category}</div>

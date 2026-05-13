@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Label } from '@/components/ui/label';
-import { Check, QrCode, RefreshCw } from 'lucide-react';
+import { Check, QrCode, Loader2 } from 'lucide-react';
 import { activatePro } from '@/lib/payment';
 import Link from 'next/link';
 
@@ -46,13 +46,18 @@ export default function PayPage() {
   const product = products.find((p) => p.id === selected)!;
   const displayPrice = couponApplied ? getDiscountedPrice(product.price) : product.price;
 
+  const [activating, setActivating] = useState(false);
+
   const handleSubmit = () => {
     if (!email) return;
     setSubmitted(true);
   };
 
-  const handleActivate = () => {
-    if (activatePro(licenseKey)) {
+  const handleActivate = async () => {
+    setActivating(true);
+    const success = await activatePro(licenseKey);
+    setActivating(false);
+    if (success) {
       setActivated(true);
     }
   };
@@ -201,8 +206,8 @@ export default function PayPage() {
                         value={licenseKey}
                         onChange={(e) => setLicenseKey(e.target.value)}
                       />
-                      <Button onClick={handleActivate} disabled={!licenseKey}>
-                        激活
+                      <Button onClick={handleActivate} disabled={!licenseKey || activating}>
+                        {activating ? '验证中...' : '激活'}
                       </Button>
                     </div>
                     <p className="text-xs text-muted-foreground">
