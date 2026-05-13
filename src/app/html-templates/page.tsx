@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'HTML Landing Page Templates — Free & Pro',
-  description: '9 free and pro HTML landing page templates. SaaS, e-commerce, app, course, consulting, AI, waitlist, portfolio, event. Download and deploy.',
+  description: '15 free and pro HTML landing page templates. SaaS, e-commerce, app, course, startup, restaurant, fitness, real estate, nonprofit, podcast. Download and deploy.',
 };
 
 const templates = [
@@ -20,6 +20,12 @@ const templates = [
   { id: 'waitlist', name: 'Waitlist', category: 'Pre-launch', free: false, desc: 'Simple, focused waitlist page with email capture and social proof counter.' },
   { id: 'portfolio', name: 'Portfolio', category: 'Creative', free: false, desc: 'Freelancer portfolio with project showcase, testimonials, and contact form.' },
   { id: 'event', name: 'Event', category: 'Events', free: false, desc: 'Conference or meetup page with schedule, speakers, and registration.' },
+  { id: 'startup-launch', name: 'Startup Launch', category: 'Startup', free: false, desc: 'Startup page with problem/solution framing, early adopter pricing, and urgency.' },
+  { id: 'restaurant', name: 'Restaurant / Café', category: 'Food & Drink', free: false, desc: 'Restaurant page with menu highlights, reservations, gallery, and warm design.' },
+  { id: 'fitness-gym', name: 'Fitness / Gym', category: 'Fitness', free: false, desc: 'Gym page with class schedules, trainer profiles, free trial CTA, and memberships.' },
+  { id: 'real-estate', name: 'Real Estate', category: 'Real Estate', free: false, desc: 'Property listings, agent profile, market stats, and lead capture form.' },
+  { id: 'nonprofit', name: 'Nonprofit / Charity', category: 'Nonprofit', free: false, desc: 'Impact stats, donation tiers, stories, and mission section.' },
+  { id: 'podcast', name: 'Podcast', category: 'Media', free: false, desc: 'Episode listings, subscribe buttons, host profile, dark theme design.' },
 ];
 
 export default function HtmlTemplatesPage() {
@@ -30,7 +36,7 @@ export default function HtmlTemplatesPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">HTML Landing Page Templates</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              9 responsive, SEO-optimized HTML templates. Customize in our editor, export clean code, deploy anywhere.
+              15 responsive, SEO-optimized HTML templates. Customize in our editor, export clean code, deploy anywhere.
             </p>
           </div>
 

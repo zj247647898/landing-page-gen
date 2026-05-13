@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { icon: Palette, title: '9 Templates', desc: 'SaaS, e-commerce, app, course, consulting, AI tool, waitlist, portfolio, event' },
+  { icon: Palette, title: '15 Templates', desc: 'SaaS, e-commerce, app, course, consulting, AI tool, waitlist, portfolio, event, startup, restaurant, fitness, real estate, nonprofit, podcast' },
   { icon: Zap, title: 'Live Preview', desc: 'See every change instantly. No save button needed.' },
   { icon: Download, title: 'Export HTML', desc: 'Download clean HTML/CSS. Deploy anywhere.' },
   { icon: Shield, title: 'One-Time Payment', desc: 'No subscription. Pay once, keep forever.' },
@@ -27,6 +27,12 @@ const useCases = [
   { name: 'Pre-launch Waitlist', template: 'Waitlist', href: '/editor/waitlist' },
   { name: 'Freelancer Portfolio', template: 'Portfolio', href: '/editor/portfolio' },
   { name: 'Event / Conference', template: 'Event', href: '/editor/event' },
+  { name: 'Startup Launch', template: 'Startup Launch', href: '/editor/startup-launch' },
+  { name: 'Restaurant / Café', template: 'Restaurant', href: '/editor/restaurant' },
+  { name: 'Gym / Fitness', template: 'Fitness', href: '/editor/fitness-gym' },
+  { name: 'Real Estate', template: 'Real Estate', href: '/editor/real-estate' },
+  { name: 'Nonprofit / Charity', template: 'Nonprofit', href: '/editor/nonprofit' },
+  { name: 'Podcast', template: 'Podcast', href: '/editor/podcast' },
 ];
 
 export default function LandingPageBuilderPage() {
