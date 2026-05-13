@@ -26,6 +26,36 @@ const posts = [
     excerpt: 'Download clean, responsive HTML templates ready to customize and deploy on any hosting platform.',
     date: 'May 2026',
   },
+  {
+    slug: 'saas-landing-page-examples',
+    title: '15 SaaS Landing Page Examples That Convert (2026 Edition)',
+    excerpt: 'Analyze the top-performing SaaS landing pages and learn the 5 proven patterns they all follow.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'landing-page-vs-website',
+    title: 'Landing Page vs Website: Which One Do You Need?',
+    excerpt: 'Understand the key differences and learn when to use a landing page vs a full website.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'how-to-create-waitlist-page',
+    title: 'How to Create a Waitlist Page That Builds Hype Before Launch',
+    excerpt: 'Build anticipation and collect emails before your product launches with a high-converting waitlist page.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'ai-tool-landing-page-design',
+    title: 'How to Design a Landing Page for an AI Tool (With Examples)',
+    excerpt: 'AI products need special landing page strategies. Learn the framework that converts complex tech into simple value.',
+    date: 'May 2026',
+  },
+  {
+    slug: 'portfolio-landing-page-tips',
+    title: 'Portfolio Landing Page: 8 Tips to Get More Clients',
+    excerpt: 'Turn your portfolio from a passive showcase into an active client acquisition machine.',
+    date: 'May 2026',
+  },
 ];
 
 export default function BlogPage() {

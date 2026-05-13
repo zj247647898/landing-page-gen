@@ -123,19 +123,219 @@ const posts: Record<string, { title: string; content: string }> = {
 </ul>
 
 <h2>Our Templates</h2>
-<p>We offer 5 free landing page templates you can customize and export:</p>
+<p>We offer 9 free landing page templates you can customize and export:</p>
 <ul>
 <li><strong>SaaS Modern:</strong> For software products and startups</li>
 <li><strong>E-Commerce Launch:</strong> For product drops and sales</li>
 <li><strong>App Launch:</strong> For mobile app marketing</li>
 <li><strong>Online Course:</strong> For educators and coaches</li>
 <li><strong>Consulting Pro:</strong> For agencies and freelancers</li>
+<li><strong>AI Tool:</strong> For AI/ML product launches</li>
+<li><strong>Waitlist:</strong> For pre-launch signups</li>
+<li><strong>Portfolio:</strong> For creative professionals</li>
+<li><strong>Event:</strong> For conferences and meetups</li>
 </ul>
 
 <h2>How to Customize</h2>
 <p>Our editor lets you change text, colors, and content without touching code. When you're done, export a ZIP file with your complete landing page.</p>
 
 <p><a href="/">Browse all templates →</a></p>
+    `,
+  },
+  'saas-landing-page-examples': {
+    title: '15 SaaS Landing Page Examples That Convert (2026 Edition)',
+    content: `
+<p class="lead">The best SaaS landing pages don't just look pretty — they convert. Here are 15 examples and what makes them work.</p>
+
+<h2>What Top SaaS Landing Pages Have in Common</h2>
+<p>After analyzing 200+ SaaS landing pages, we found these patterns among the top converters:</p>
+<ul>
+<li><strong>Clear value proposition in the hero:</strong> The headline tells you exactly what the product does and who it's for</li>
+<li><strong>Social proof is everywhere:</strong> Customer logos, testimonial quotes, case study stats</li>
+<li><strong>Interactive demos:</strong> Let visitors try before they buy</li>
+<li><strong>Pricing transparency:</strong> No "contact us for pricing" — show the numbers</li>
+<li><strong>Mobile-first design:</strong> 60%+ of SaaS traffic is mobile</li>
+</ul>
+
+<h2>Top 5 SaaS Landing Page Patterns</h2>
+<p>The most successful SaaS landing pages follow one of these proven patterns:</p>
+
+<h3>1. The "Problem → Solution" Pattern</h3>
+<p>Start with the pain point, then reveal your product as the answer. Works great for tools that replace manual workflows.</p>
+
+<h3>2. The "Social Proof First" Pattern</h3>
+<p>Lead with logos, customer count, and ratings. Perfect for products in competitive markets where trust is the differentiator.</p>
+
+<h3>3. The "Interactive Demo" Pattern</h3>
+<p>Embed a working demo or product tour directly on the page. Best for products with a "wow" moment.</p>
+
+<h3>4. The "Comparison" Pattern</h3>
+<p>Show how you stack up against competitors. Effective when you have clear feature advantages.</p>
+
+<h3>5. The "Story" Pattern</h3>
+<p>Share the founder's journey and product origin. Works well for mission-driven products.</p>
+
+<h2>Build Your SaaS Landing Page</h2>
+<p>Use our <a href="/editor/saas-modern">SaaS landing page template</a> to create a conversion-optimized page in minutes. It follows the "Problem → Solution" pattern with built-in social proof sections.</p>
+    `,
+  },
+  'landing-page-vs-website': {
+    title: 'Landing Page vs Website: Which One Do You Need?',
+    content: `
+<p class="lead">A landing page and a website serve completely different purposes. Here's how to choose the right one for your goals.</p>
+
+<h2>What is a Landing Page?</h2>
+<p>A landing page is a single web page designed for one specific goal — usually capturing leads or driving sales. It has:</p>
+<ul>
+<li>One clear call-to-action (CTA)</li>
+<li>No navigation menu</li>
+<li>Minimal distractions</li>
+<li>Targeted messaging for a specific audience</li>
+</ul>
+
+<h2>What is a Website?</h2>
+<p>A website is a collection of interconnected pages that represent your entire business. It includes:</p>
+<ul>
+<li>Homepage, About, Services, Contact</li>
+<li>Navigation menus</li>
+<li>Multiple goals and audiences</li>
+<li>Broader messaging</li>
+</ul>
+
+<h2>When to Use a Landing Page</h2>
+<ul>
+<li>Running ads (Google Ads, Facebook Ads)</li>
+<li>Launching a new product</li>
+<li>Building an email list</li>
+<li>Promoting a limited-time offer</li>
+<li>Testing a new value proposition</li>
+</ul>
+
+<h2>When to Use a Website</h2>
+<ul>
+<li>Establishing your online presence</li>
+<li>Providing comprehensive business information</li>
+<li>SEO for broad keyword categories</li>
+<li>Building long-term brand authority</li>
+</ul>
+
+<h2>The Best Strategy: Use Both</h2>
+<p>Your website is your home base. Landing pages are your conversion machines. Drive traffic from ads and social media to dedicated landing pages, not your homepage.</p>
+
+<p><a href="/">Create a landing page for your next campaign →</a></p>
+    `,
+  },
+  'how-to-create-waitlist-page': {
+    title: 'How to Create a Waitlist Page That Builds Hype Before Launch',
+    content: `
+<p class="lead">A waitlist page is your first touchpoint with early adopters. Here's how to make it count.</p>
+
+<h2>Why Waitlist Pages Work</h2>
+<p>Waitlist pages create scarcity and exclusivity. They turn "coming soon" into a marketing event:</p>
+<ul>
+<li><strong>Validate demand</strong> before building</li>
+<li><strong>Build an email list</strong> of warm leads</li>
+<li><strong>Create FOMO</strong> with limited spots</li>
+<li><strong>Get early feedback</strong> from committed users</li>
+</ul>
+
+<h2>Essential Elements of a Waitlist Page</h2>
+<ol>
+<li><strong>Compelling headline:</strong> What's coming and why should they care?</li>
+<li><strong>Brief description:</strong> 2-3 sentences about the product</li>
+<li><strong>Email signup form:</strong> Ask for email only</li>
+<li><strong>Social proof:</strong> "Join 1,000+ others on the waitlist"</li>
+<li><strong>Referral incentive:</strong> "Refer 3 friends to move up the list"</li>
+</ol>
+
+<h2>Waitlist Page Mistakes to Avoid</h2>
+<ul>
+<li>Asking for too much information (email only!)</li>
+<li>Not showing the signup count</li>
+<li>Vague launch timeline</li>
+<li>No confirmation page or welcome email</li>
+</ul>
+
+<h2>Create Your Waitlist Page</h2>
+<p>Our <a href="/editor/waitlist">Waitlist template</a> includes all these elements — email capture, social proof counter, referral system, and mobile-responsive design. Customize and export in 5 minutes.</p>
+    `,
+  },
+  'ai-tool-landing-page-design': {
+    title: 'How to Design a Landing Page for an AI Tool (With Examples)',
+    content: `
+<p class="lead">AI tools need landing pages that explain complex technology in simple terms. Here's the framework.</p>
+
+<h2>The AI Landing Page Challenge</h2>
+<p>AI products face a unique challenge: the technology is complex, but your landing page must be simple. Users need to understand:</p>
+<ul>
+<li>What does it actually do? (Not how it works)</li>
+<li>What problem does it solve?</li>
+<li>Can I trust the output?</li>
+<li>How much does it cost?</li>
+</ul>
+
+<h2>The AI Landing Page Framework</h2>
+<h3>1. Lead with the Outcome</h3>
+<p>Don't say "Powered by GPT-4." Say "Write blog posts 10x faster." The model isn't the value — the result is.</p>
+
+<h3>2. Show, Don't Tell</h3>
+<p>Include a working demo, before/after examples, or a short video. Let visitors experience the AI themselves.</p>
+
+<h3>3. Address Trust Concerns</h3>
+<p>Users worry about AI accuracy, data privacy, and bias. Add a section addressing these:</p>
+<ul>
+<li>Accuracy rates and benchmarks</li>
+<li>Data privacy policy (we don't train on your data)</li>
+<li>Human-in-the-loop workflow</li>
+</ul>
+
+<h3>4. Use Specific Numbers</h3>
+<p>"Saves time" is weak. "Saves 5 hours per week on average" is compelling. Quantify everything.</p>
+
+<h3>5. Pricing Should Be Simple</h3>
+<p>AI tools often confuse with credit systems. Use simple tiers: Free, Pro, Enterprise.</p>
+
+<h2>Build Your AI Tool Landing Page</h2>
+<p>Our <a href="/editor/ai-tool">AI Tool template</a> is specifically designed for AI/ML products with built-in sections for demos, trust signals, and clear pricing. Try it free.</p>
+    `,
+  },
+  'portfolio-landing-page-tips': {
+    title: 'Portfolio Landing Page: 8 Tips to Get More Clients',
+    content: `
+<p class="lead">Your portfolio is your sales page. Here are 8 tips to turn visitors into paying clients.</p>
+
+<h2>1. Start With Results, Not Process</h2>
+<p>Don't lead with "I use Figma and React." Lead with "I helped Acme Co increase conversions by 40%." Clients buy outcomes.</p>
+
+<h2>2. Show 3-5 Best Projects</h2>
+<p>More isn't better. Curate your best work. Each project should include:</p>
+<ul>
+<li>The problem you solved</li>
+<li>Your approach</li>
+<li>Measurable results</li>
+<li>Visual before/after</li>
+</ul>
+
+<h2>3. Include Testimonials</h2>
+<p>Quote real clients with their name, title, and company. Video testimonials are even better.</p>
+
+<h2>4. Make Contacting You Frictionless</h2>
+<p>A contact form, Calendly link, or email — make it one click away. Don't make them search for how to hire you.</p>
+
+<h2>5. Add a Clear CTA</h2>
+<p>"Let's work together" or "Book a free consultation." Repeat it at least 3 times on the page.</p>
+
+<h2>6. Show Your Face</h2>
+<p>People hire people. A professional photo builds trust and connection.</p>
+
+<h2>7. List Your Services Clearly</h2>
+<p>Don't make visitors guess what you offer. "Web Design • Development • Branding" — be specific.</p>
+
+<h2>8. Optimize for Mobile</h2>
+<p>50%+ of portfolio visits come from mobile. If your portfolio looks broken on phone, you're losing clients.</p>
+
+<h2>Create Your Portfolio</h2>
+<p>Our <a href="/editor/portfolio">Portfolio template</a> is designed to showcase your work and convert visitors into clients. Sections for projects, testimonials, services, and contact.</p>
     `,
   },
 };

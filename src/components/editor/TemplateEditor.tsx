@@ -185,9 +185,9 @@ export default function TemplateEditor({
             {!canExport ? 'Pro Required' : exporting ? 'Exporting...' : exported ? 'Downloaded!' : 'Export HTML'}
           </Button>
           {!canExport && (
-            <Link href="/pricing" className="block">
+            <Link href="/pay" className="block">
               <Button variant="outline" className="w-full text-indigo-600 border-indigo-600">
-                Upgrade to Pro — $29
+                Upgrade to Pro — ¥199
               </Button>
             </Link>
           )}

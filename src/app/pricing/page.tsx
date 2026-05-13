@@ -18,19 +18,21 @@ const plans = [
   {
     name: 'Pro',
     price: '$29',
+    priceCNY: '¥199',
     description: 'Best for indie makers',
     features: ['All 9 templates', 'Full customization', 'HTML export (ZIP)', 'Commercial license', 'Priority email support'],
     cta: 'Buy Now',
-    ctaLink: PAYMENT_CONFIG.pro.paymentUrl,
+    ctaLink: '/pay',
     popular: true,
   },
   {
     name: 'Agency',
     price: '$99',
+    priceCNY: '¥699',
     description: 'For teams & agencies',
     features: ['Everything in Pro', 'White-label export', 'Unlimited projects', 'Source code access', 'Custom template requests'],
     cta: 'Buy Now',
-    ctaLink: PAYMENT_CONFIG.agency.paymentUrl,
+    ctaLink: '/pay',
     popular: false,
   },
 ];
