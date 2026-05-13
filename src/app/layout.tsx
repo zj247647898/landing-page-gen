@@ -50,8 +50,11 @@ export default function RootLayout({
               <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Services
               </Link>
-              <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                Pricing
+              <Link href="/free-seo-audit" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                Free Audit
+              </Link>
+              <Link href="/pricing" className="text-sm font-medium bg-indigo-600 text-white px-4 py-1.5 rounded-md hover:bg-indigo-700 transition-colors">
+                Get Pro — $29
               </Link>
             </nav>
           </div>

@@ -2,14 +2,15 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, Mail } from 'lucide-react';
+import { PAYMENT_CONFIG } from '@/lib/payment';
 
 const plans = [
   {
     name: 'Starter',
     price: '$0',
     description: 'Perfect for trying out',
-    features: ['1 template', 'Live preview', 'Basic customization', 'Community support'],
+    features: ['1 template (SaaS Modern)', 'Live preview', 'Basic customization', 'Community support'],
     cta: 'Start Free',
     ctaLink: '/editor/saas-modern',
     popular: false,
@@ -18,18 +19,18 @@ const plans = [
     name: 'Pro',
     price: '$29',
     description: 'Best for indie makers',
-    features: ['All 5 templates', 'Full customization', 'HTML export (ZIP)', 'Commercial license', 'Priority support'],
+    features: ['All 9 templates', 'Full customization', 'HTML export (ZIP)', 'Commercial license', 'Priority email support'],
     cta: 'Buy Now',
-    ctaLink: 'https://gumroad.com/l/landing-page-gen-pro',
+    ctaLink: PAYMENT_CONFIG.pro.paymentUrl,
     popular: true,
   },
   {
     name: 'Agency',
     price: '$99',
     description: 'For teams & agencies',
-    features: ['Everything in Pro', 'White-label export', 'Unlimited projects', 'API access', 'Custom templates'],
+    features: ['Everything in Pro', 'White-label export', 'Unlimited projects', 'Source code access', 'Custom template requests'],
     cta: 'Buy Now',
-    ctaLink: 'https://gumroad.com/l/landing-page-gen-agency',
+    ctaLink: PAYMENT_CONFIG.agency.paymentUrl,
     popular: false,
   },
 ];
