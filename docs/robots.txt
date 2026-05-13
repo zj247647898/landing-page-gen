@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zj247647898.github.io/landing-page-gen/sitemap.xml
