@@ -35,7 +35,7 @@ export default function PayPage() {
     if (!couponApplied) return price;
     const num = parseFloat(price.replace(/[¥,]/g, ''));
     const discount = validCoupons[couponCode.toUpperCase()] || 0;
-    return '¥' + Math.round(num * (1 - discount)).toLocaleString();
+    return '¥' + Math.floor(num * (1 - discount)).toLocaleString();
   };
 
   const applyCoupon = () => {
