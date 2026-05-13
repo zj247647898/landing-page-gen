@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { getAllTemplates } from '@/lib/templates';
 import { ArrowRight, Zap, Palette, Download, Sparkles, Clock, Shield, Star, Users, TrendingUp, Check } from 'lucide-react';
+import ShareButtons from '@/components/ShareButtons';
 
 export default function Home() {
   const templates = getAllTemplates();
@@ -276,9 +277,11 @@ export default function Home() {
               <Link href="/blog" className="hover:text-foreground">Blog</Link>
               <Link href="/toolkit" className="hover:text-foreground">Toolkit</Link>
               <Link href="/services" className="hover:text-foreground">Services</Link>
+              <Link href="/faq" className="hover:text-foreground">FAQ</Link>
             </div>
-            <p className="text-sm text-muted-foreground">Landing Page Generator &copy; 2026</p>
+            <ShareButtons />
           </div>
+          <p className="text-sm text-muted-foreground text-center mt-4">Landing Page Generator &copy; 2026</p>
         </div>
       </footer>
     </div>

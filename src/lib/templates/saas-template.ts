@@ -31,6 +31,15 @@ export const saasTemplate: TemplateConfig = {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${data.brandName} - ${data.tagline}</title>
+  <meta name="description" content="${data.subheadline}">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${data.brandName} - ${data.tagline}">
+  <meta property="og:description" content="${data.subheadline}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${data.brandName} - ${data.tagline}">
+  <meta name="twitter:description" content="${data.subheadline}">
+  <link rel="canonical" href="${data.ctaLink}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
