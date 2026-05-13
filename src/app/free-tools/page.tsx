@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Code, Eye, Palette } from 'lucide-react';
+import { ArrowRight, Code, Eye, Palette, QrCode, Braces, FileText } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free Web Tools — Meta Tags, OG Preview, Color Palettes',
-  description: 'Free online tools for web developers and marketers. Generate meta tags, preview Open Graph cards, and create color palettes.',
+  title: 'Free Web Tools — Meta Tags, OG Preview, Color Palettes, QR Code, JSON, Base64',
+  description: 'Free online tools for web developers and marketers. Generate meta tags, preview Open Graph cards, create color palettes, generate QR codes, format JSON, and encode/decode Base64.',
 };
 
 const tools = [
@@ -32,6 +32,27 @@ const tools = [
     icon: Palette,
     tag: 'Design',
   },
+  {
+    title: 'QR Code Generator',
+    description: 'Generate QR codes for any URL or text. Customize colors, size, and download as PNG.',
+    href: '/free-tools/qr-code',
+    icon: QrCode,
+    tag: 'Marketing',
+  },
+  {
+    title: 'JSON Formatter',
+    description: 'Format, validate, and minify JSON. Color-coded output with error detection and stats.',
+    href: '/free-tools/json-formatter',
+    icon: Braces,
+    tag: 'Developer',
+  },
+  {
+    title: 'Base64 Encode/Decode',
+    description: 'Encode text to Base64 or decode Base64 to text. Real-time conversion with error handling.',
+    href: '/free-tools/base64',
+    icon: FileText,
+    tag: 'Developer',
+  },
 ];
 
 export default function FreeToolsPage() {
@@ -47,7 +68,7 @@ export default function FreeToolsPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {tools.map((tool) => (
               <Card key={tool.title} className="hover:shadow-lg transition-all hover:-translate-y-1">
                 <CardHeader>
