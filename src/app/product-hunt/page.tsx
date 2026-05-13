@@ -121,13 +121,20 @@ export default function ProductHuntPage() {
             {templates.map((t) => (
               <Card key={t.id} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Badge variant="outline" className="w-fit">{t.category}</Badge>
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline" className="w-fit">{t.category}</Badge>
+                    {t.id === 'saas-modern' ? (
+                      <Badge className="bg-green-100 text-green-700">FREE</Badge>
+                    ) : (
+                      <Badge className="bg-orange-100 text-orange-700">PRO</Badge>
+                    )}
+                  </div>
                   <CardTitle className="text-lg">{t.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <Link href={`/editor/${t.id}`}>
-                    <Button className="w-full" variant="outline">
-                      Try Template <ArrowRight className="w-4 h-4 ml-1" />
+                    <Button className="w-full" variant={t.id === 'saas-modern' ? 'default' : 'outline'}>
+                      {t.id === 'saas-modern' ? 'Try Free' : 'Preview'} <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -206,7 +213,7 @@ export default function ProductHuntPage() {
                     <span className="text-sm">{item}</span>
                   </div>
                 ))}
-                <Link href="/pay" className="block mt-4">
+                <Link href="/pay?coupon=PH50" className="block mt-4">
                   <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
                     Get Pro — 50% OFF <ArrowRight className="w-4 h-4 ml-1" />
                   </Button>

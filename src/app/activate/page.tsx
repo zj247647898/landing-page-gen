@@ -46,8 +46,8 @@ export default function ActivatePage() {
             <p className="text-muted-foreground">
               已解锁全部15个模板和HTML导出功能
             </p>
-            <Link href="/editor/saas-modern">
-              <Button className="w-full">开始创建 →</Button>
+            <Link href="/html-templates">
+              <Button className="w-full">选择模板开始创建 →</Button>
             </Link>
           </CardContent>
         </Card>

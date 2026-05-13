@@ -91,10 +91,24 @@ export default function FreeToolsPage() {
           </div>
 
           {/* Also mention other free tools */}
-          <div className="text-center p-6 bg-indigo-50 rounded-xl">
+          <div className="text-center p-6 bg-indigo-50 rounded-xl mb-8">
             <h3 className="font-bold text-lg mb-2">Also try our Free SEO Audit</h3>
             <p className="text-sm text-muted-foreground mb-4">Enter any URL and get an instant SEO health check.</p>
             <Link href="/free-seo-audit"><Button variant="outline">Free SEO Audit →</Button></Link>
+          </div>
+
+          {/* Pro CTA */}
+          <div className="text-center p-8 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-xl text-white">
+            <h3 className="font-bold text-xl mb-2">Need landing page templates?</h3>
+            <p className="text-indigo-100 mb-4">15 industry-specific templates. Customize, preview, export clean HTML.</p>
+            <div className="flex gap-3 justify-center flex-wrap">
+              <Link href="/editor/saas-modern">
+                <Button className="bg-white text-indigo-600 hover:bg-indigo-50">Try Free Template</Button>
+              </Link>
+              <Link href="/html-templates">
+                <Button variant="outline" className="border-white text-white hover:bg-white/10">View All Templates →</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

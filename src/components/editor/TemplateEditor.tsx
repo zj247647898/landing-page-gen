@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TemplateField } from '@/lib/templates/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -44,13 +44,24 @@ export default function TemplateEditor({
 
   // Free tier: only saas-modern is free. All others require Pro.
   const isFreeTemplate = templateId === 'saas-modern';
-  // In production, check localStorage for purchase status
-  const [isPro] = useState(() => {
+  // Check localStorage for Pro status, with real-time sync across tabs
+  const [isPro, setIsPro] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('lpgen_pro') === 'true';
     }
     return false;
   });
+
+  // Listen for storage changes (activation in another tab)
+  useEffect(() => {
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === 'lpgen_pro') {
+        setIsPro(e.newValue === 'true');
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
   const canExport = isFreeTemplate || isPro;
 
   // Generate HTML by replacing placeholders in initialHtml

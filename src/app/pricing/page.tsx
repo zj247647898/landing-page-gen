@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, LayoutTemplate, Pencil, Download } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pricing — One-Time Payment, Keep Forever',
-  description: 'Pro Plan ¥199 for all 15 templates and HTML export. No subscription, pay once keep forever.',
+  title: 'Pricing — 一次性付费，永久使用',
+  description: 'Pro Plan ¥199 解锁全部15个模板和HTML导出。无订阅，一次付费永久使用。',
 };
 
 export default function PricingPage() {
@@ -17,12 +17,39 @@ export default function PricingPage() {
         <div className="text-center mb-16">
           <Badge className="mb-4" variant="secondary">
             <Sparkles className="w-3 h-3 mr-1" />
-            Simple pricing
+            简单定价
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Choose your plan</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">选择你的方案</h1>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             一次性付费，永久使用。无订阅，无隐藏费用。
           </p>
+        </div>
+
+        {/* What you get - product intro for search visitors */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                <LayoutTemplate className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h3 className="font-bold mb-1">选模板</h3>
+              <p className="text-sm text-muted-foreground">15个行业模板：SaaS、电商、AI、餐饮...</p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                <Pencil className="w-6 h-6 text-violet-600" />
+              </div>
+              <h3 className="font-bold mb-1">改内容</h3>
+              <p className="text-sm text-muted-foreground">实时预览编辑器，改文字、颜色即时生效</p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                <Download className="w-6 h-6 text-emerald-600" />
+              </div>
+              <h3 className="font-bold mb-1">导出部署</h3>
+              <p className="text-sm text-muted-foreground">下载干净HTML，部署到任何地方</p>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
