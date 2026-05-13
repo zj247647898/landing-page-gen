@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Label } from '@/components/ui/label';
-import { Check, QrCode, Copy } from 'lucide-react';
+import { Check, QrCode, Copy, RefreshCw } from 'lucide-react';
 import { activatePro } from '@/lib/payment';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -137,10 +137,17 @@ export default function PayPage() {
                         className="rounded"
                       />
                     </div>
-              <p className="text-sm text-muted-foreground mt-4 text-center">
-                支付后请将订单截图发送至 <strong>247647898@qq.com</strong>，<br />
-                或在下方输入收到的授权码
-              </p>
+              <div className="mt-4 space-y-2 text-center">
+                <p className="text-sm text-muted-foreground">
+                  支付后请保存支付宝交易号
+                </p>
+                <Link href="/auto-activate">
+                  <Button variant="outline" size="sm" className="text-indigo-600 border-indigo-600">
+                    <RefreshCw className="w-4 h-4 mr-2" />
+                    自助获取授权码（无需等待）
+                  </Button>
+                </Link>
+              </div>
                   </CardContent>
                 </Card>
 
