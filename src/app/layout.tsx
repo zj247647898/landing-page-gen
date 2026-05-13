@@ -47,6 +47,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="manifest" href="/landing-page-gen/manifest.json" />
+        <meta name="theme-color" content="#4F46E5" />
+      </head>
       <body className="min-h-full flex flex-col">
         <header className="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
           <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -62,6 +66,9 @@ export default function RootLayout({
               </Link>
               <Link href="/services" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Services
+              </Link>
+              <Link href="/free-tools" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                Free Tools
               </Link>
               <Link href="/free-seo-audit" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Free Audit
