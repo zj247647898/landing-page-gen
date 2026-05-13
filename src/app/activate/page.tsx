@@ -55,7 +55,7 @@ export default function ActivatePage() {
           </div>
           <CardTitle className="text-2xl">Activate Pro</CardTitle>
           <p className="text-sm text-muted-foreground mt-2">
-            Enter the license key from your purchase confirmation email
+            Enter the license key from your purchase confirmation email (247647898@qq.com)
           </p>
         </CardHeader>
         <CardContent className="space-y-4">

@@ -137,10 +137,10 @@ export default function PayPage() {
                         className="rounded"
                       />
                     </div>
-                    <p className="text-sm text-muted-foreground mt-4 text-center">
-                      支付后请将订单截图发送至邮箱，<br />
-                      或在下方输入收到的授权码
-                    </p>
+              <p className="text-sm text-muted-foreground mt-4 text-center">
+                支付后请将订单截图发送至 <strong>247647898@qq.com</strong>，<br />
+                或在下方输入收到的授权码
+              </p>
                   </CardContent>
                 </Card>
 
@@ -160,7 +160,7 @@ export default function PayPage() {
                       </Button>
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      付款后1小时内发送授权码。如未收到，请邮件联系。
+                      付款后1小时内发送授权码。如未收到，请邮件联系 247647898@qq.com
                     </p>
                   </CardContent>
                 </Card>

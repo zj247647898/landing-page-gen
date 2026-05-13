@@ -14,32 +14,32 @@ export const PAYMENT_CONFIG = {
     price: 29,
     currency: 'USD',
     // Replace with your actual payment link after signing up
-    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_PRO_URL || 'mailto:landingpagegen@outlook.com?subject=Pro%20Plan%20Purchase%20($29)&body=I%20want%20to%20purchase%20the%20Pro%20Plan%20for%20$29.',
+    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_PRO_URL || 'mailto:247647898@qq.com?subject=Pro%20Plan%20Purchase%20($29)&body=I%20want%20to%20purchase%20the%20Pro%20Plan%20for%20$29.',
     label: 'Buy Pro — $29',
   },
   agency: {
     price: 99,
     currency: 'USD',
-    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_AGENCY_URL || 'mailto:landingpagegen@outlook.com?subject=Agency%20Plan%20Purchase%20($99)&body=I%20want%20to%20purchase%20the%20Agency%20Plan%20for%20$99.',
+    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_AGENCY_URL || 'mailto:247647898@qq.com?subject=Agency%20Plan%20Purchase%20($99)&body=I%20want%20to%20purchase%20the%20Agency%20Plan%20for%20$99.',
     label: 'Buy Agency — $99',
   },
   toolkitBundle: {
     price: 149,
     currency: 'USD',
-    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_TOOLKIT_URL || 'mailto:landingpagegen@outlook.com?subject=Developer%20Toolkit%20Bundle%20($149)&body=I%20want%20to%20purchase%20the%20Developer%20Toolkit%20Bundle%20for%20$149.',
+    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_TOOLKIT_URL || 'mailto:247647898@qq.com?subject=Developer%20Toolkit%20Bundle%20($149)&body=I%20want%20to%20purchase%20the%20Developer%20Toolkit%20Bundle%20for%20$149.',
     label: 'Buy Bundle — $149',
   },
   // Service packages
   serviceLandingPage: {
     price: 499,
     currency: 'USD',
-    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_SVC_LP_URL || 'mailto:landingpagegen@outlook.com?subject=Landing%20Page%20Service%20($499)&body=I%20want%20to%20hire%20you%20for%20a%20custom%20Landing%20Page%20($499).',
+    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_SVC_LP_URL || 'mailto:247647898@qq.com?subject=Landing%20Page%20Service%20($499)&body=I%20want%20to%20hire%20you%20for%20a%20custom%20Landing%20Page%20($499).',
     label: 'Get Started — $499',
   },
   serviceMVP: {
     price: 1999,
     currency: 'USD',
-    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_SVC_MVP_URL || 'mailto:landingpagegen@outlook.com?subject=MVP%20Development%20($1,999)&body=I%20want%20to%20hire%20you%20for%20MVP%20Development%20($1,999).',
+    paymentUrl: process.env.NEXT_PUBLIC_PAYMENT_SVC_MVP_URL || 'mailto:247647898@qq.com?subject=MVP%20Development%20($1,999)&body=I%20want%20to%20hire%20you%20for%20MVP%20Development%20($1,999).',
     label: 'Get Started — $1,999',
   },
 };

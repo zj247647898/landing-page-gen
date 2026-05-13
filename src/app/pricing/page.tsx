@@ -88,7 +88,7 @@ export default function PricingPage() {
         </div>
 
         <div className="text-center mt-16 text-sm text-muted-foreground">
-          <p>Questions? Email support@landingpagegen.com</p>
+          <p>Questions? Email 247647898@qq.com</p>
         </div>
       </div>
     </div>
