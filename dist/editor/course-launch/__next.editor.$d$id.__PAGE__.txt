@@ -1,0 +1,116 @@
+1:"$Sreact.fragment"
+2:I[27381,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/09pf3dgzc5syo.js","/_next/static/chunks/0o8_03ghombb8.js"],"default"]
+7:I[97367,["/_next/static/chunks/13h-0fd.p-1ga.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:T12bc,<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full-Stack Web Development Bootcamp</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn-primary{display:inline-block;padding:18px 40px;background:#7c3aed;color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:16px;transition:all .3s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 40px #7c3aed50}
+
+.hero{padding:100px 0;background:linear-gradient(135deg,#7c3aed08,#fff 50%);text-align:center}
+.hero h1{font-size:48px;font-weight:800;line-height:1.15;margin-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto}
+.hero p{font-size:20px;color:#6b7280;max-width:600px;margin:0 auto 32px}
+.price-box{display:inline-flex;align-items:center;gap:16px;margin-bottom:32px;padding:16px 32px;background:#fff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.price-box .current{font-size:36px;font-weight:800;color:#7c3aed}
+.price-box .original{font-size:20px;text-decoration:line-through;color:#9ca3af}
+.badge{display:inline-flex;gap:24px;margin-bottom:32px}
+.badge span{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:#6b7280}
+
+.curriculum{padding:80px 0;background:#f8fafc}
+.section-title{text-align:center;font-size:36px;font-weight:700;margin-bottom:48px}
+.modules{max-width:700px;margin:0 auto}
+.module{display:flex;align-items:center;gap:20px;padding:24px;background:#fff;border-radius:12px;margin-bottom:16px;border-left:4px solid #7c3aed}
+.module-num{width:40px;height:40px;background:#7c3aed;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+.module h3{font-size:18px;font-weight:600}
+
+.instructor{padding:80px 0}
+.instructor-grid{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;max-width:800px;margin:0 auto}
+.instructor-avatar{width:160px;height:160px;background:linear-gradient(135deg,#7c3aed,#a78bfa);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:80px}
+.instructor h2{font-size:32px;font-weight:700;margin-bottom:8px}
+.instructor .title{color:#7c3aed;font-weight:600;margin-bottom:16px}
+.instructor p{color:#6b7280}
+
+.cta-section{padding:80px 0;text-align:center;background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff}
+.cta-section h2{font-size:36px;font-weight:700;margin-bottom:16px}
+.cta-section p{font-size:18px;opacity:.9;margin-bottom:32px}
+.cta-section .btn-primary{background:#fff;color:#7c3aed}
+
+.footer{padding:32px 0;text-align:center;color:#9ca3af}
+
+@media(max-width:768px){
+.hero h1{font-size:32px}
+.instructor-grid{grid-template-columns:1fr;text-align:center}
+.instructor-avatar{margin:0 auto}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="container">
+<h1>Become a Full-Stack Developer in 12 Weeks</h1>
+<p>Learn React, Node.js, and modern web development from industry experts. No prior experience required.</p>
+<div class="badge">
+<span>👥 5,000+ students</span>
+<span>⭐ 4.8 rating</span>
+<span>⏱️ Self-paced</span>
+</div>
+<div class="price-box">
+<span class="current">$497</span>
+<span class="original">$1,497</span>
+</div>
+<div>
+<a href="#enroll" class="btn-primary">Enroll Now - 67% Off</a>
+</div>
+</div>
+</section>
+
+<section class="curriculum">
+<div class="container">
+<h2 class="section-title">What you will learn</h2>
+<div class="modules">
+<div class="module"><div class="module-num">1</div><h3>HTML, CSS & JavaScript Fundamentals</h3></div>
+<div class="module"><div class="module-num">2</div><h3>React & Modern Frontend</h3></div>
+<div class="module"><div class="module-num">3</div><h3>Node.js & Backend APIs</h3></div>
+<div class="module"><div class="module-num">4</div><h3>Databases & Deployment</h3></div>
+</div>
+</div>
+</section>
+
+<section class="instructor">
+<div class="container">
+<div class="instructor-grid">
+<div class="instructor-avatar">👨‍💻</div>
+<div>
+<h2>Meet your instructor</h2>
+<div class="title">Alex Chen — Senior Engineer at Google</div>
+<p>10+ years building products used by millions. Former tech lead at Meta and Netflix.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta-section">
+<div class="container">
+<h2>Ready to start your journey?</h2>
+<p>Join 5,000+ students already enrolled</p>
+<a href="#enroll" class="btn-primary">Enroll Now - 67% Off</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container"><p>© 2026 DevMastery. All rights reserved.</p></div>
+</footer>
+</body>
+</html>0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"templateId":"course-launch","templateName":"Online Course","templateDescription":"Course sales page with curriculum, instructor bio, social proof, and enrollment CTA","templateCategory":"Education","fields":[{"id":"courseName","label":"Course Name","type":"text","defaultValue":"Full-Stack Web Development Bootcamp","required":true},{"id":"headline","label":"Headline","type":"text","defaultValue":"Become a Full-Stack Developer in 12 Weeks","required":true},{"id":"subheadline","label":"Subheadline","type":"textarea","defaultValue":"Learn React, Node.js, and modern web development from industry experts. No prior experience required.","required":true},{"id":"price","label":"Course Price","type":"text","defaultValue":"$$497","required":true},{"id":"originalPrice","label":"Original Price","type":"text","defaultValue":"$$1,497","required":true},{"id":"instructorName","label":"Instructor Name","type":"text","defaultValue":"Alex Chen","required":true},{"id":"instructorTitle","label":"Instructor Title","type":"text","defaultValue":"Senior Engineer at Google","required":true},{"id":"instructorBio","label":"Instructor Bio","type":"textarea","defaultValue":"10+ years building products used by millions. Former tech lead at Meta and Netflix.","required":true},{"id":"primaryColor","label":"Primary Color","type":"color","defaultValue":"#7c3aed","required":true},{"id":"module1","label":"Module 1","type":"text","defaultValue":"HTML, CSS & JavaScript Fundamentals","required":true},{"id":"module2","label":"Module 2","type":"text","defaultValue":"React & Modern Frontend","required":true},{"id":"module3","label":"Module 3","type":"text","defaultValue":"Node.js & Backend APIs","required":true},{"id":"module4","label":"Module 4","type":"text","defaultValue":"Databases & Deployment","required":true},{"id":"students","label":"Student Count","type":"text","defaultValue":"5,000+","required":true},{"id":"rating","label":"Rating","type":"text","defaultValue":"4.8","required":true},{"id":"ctaText","label":"CTA Text","type":"text","defaultValue":"Enroll Now - 67% Off","required":true},{"id":"ctaLink","label":"CTA Link","type":"text","defaultValue":"#enroll","required":true},{"id":"footer","label":"Footer","type":"text","defaultValue":"© 2026 DevMastery. All rights reserved.","required":true}],"initialHtml":"$3"}],["$L4","$L5"],"$L6"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"RGnHYzkvWtky9Z45oMGbm"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/09pf3dgzc5syo.js","async":true}]
+5:["$","script","script-1",{"src":"/_next/static/chunks/0o8_03ghombb8.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null
