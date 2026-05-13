@@ -53,27 +53,21 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <header className="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
-          <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="font-bold text-xl bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+          <div className="container mx-auto px-4 h-14 flex items-center justify-between">
+            <Link href="/" className="font-bold text-lg bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
               LP Gen
             </Link>
-            <nav className="flex items-center gap-2 md:gap-6">
-              <Link href="/" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <nav className="flex items-center gap-6">
+              <Link href="/html-templates" className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Templates
               </Link>
-              <Link href="/toolkit" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                Toolkit
-              </Link>
-              <Link href="/services" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                Services
-              </Link>
-              <Link href="/free-tools" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/free-tools" className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Free Tools
               </Link>
-              <Link href="/free-seo-audit" className="hidden md:inline text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                Free Audit
+              <Link href="/pricing" className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Pricing
               </Link>
-              <Link href="/pay" className="text-sm font-medium bg-indigo-600 text-white px-3 md:px-4 py-1.5 rounded-md hover:bg-indigo-700 transition-colors">
+              <Link href="/pay" className="text-sm font-medium bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-4 py-1.5 rounded-lg hover:from-indigo-700 hover:to-violet-700 transition-all">
                 Get Pro
               </Link>
             </nav>
