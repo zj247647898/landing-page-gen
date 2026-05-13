@@ -26,8 +26,26 @@ export default function PayPage() {
   const [submitted, setSubmitted] = useState(false);
   const [licenseKey, setLicenseKey] = useState('');
   const [activated, setActivated] = useState(false);
+  const [couponCode, setCouponCode] = useState('');
+  const [couponApplied, setCouponApplied] = useState(false);
+
+  const validCoupons: Record<string, number> = { PH50: 0.5, LAUNCH50: 0.5 };
+
+  const getDiscountedPrice = (price: string) => {
+    if (!couponApplied) return price;
+    const num = parseFloat(price.replace(/[¥,]/g, ''));
+    const discount = validCoupons[couponCode.toUpperCase()] || 0;
+    return '¥' + Math.round(num * (1 - discount)).toLocaleString();
+  };
+
+  const applyCoupon = () => {
+    if (validCoupons[couponCode.toUpperCase()]) {
+      setCouponApplied(true);
+    }
+  };
 
   const product = products.find((p) => p.id === selected)!;
+  const displayPrice = couponApplied ? getDiscountedPrice(product.price) : product.price;
 
   const handleSubmit = () => {
     if (!email) return;
@@ -96,7 +114,28 @@ export default function PayPage() {
 
             <Separator className="my-4" />
 
-            <h2 className="font-semibold text-lg">2. 填写邮箱</h2>
+            <h2 className="font-semibold text-lg">2. 优惠码</h2>
+            <div className="space-y-2">
+              <div className="flex gap-2">
+                <Input
+                  placeholder="输入优惠码，如 PH50"
+                  value={couponCode}
+                  onChange={(e) => { setCouponCode(e.target.value); setCouponApplied(false); }}
+                />
+                <Button variant="outline" onClick={applyCoupon} disabled={!couponCode}>
+                  应用
+                </Button>
+              </div>
+              {couponApplied && (
+                <p className="text-sm text-green-600 flex items-center gap-1">
+                  <Check className="w-4 h-4" /> 优惠码已应用！{product.price} → {displayPrice}
+                </p>
+              )}
+            </div>
+
+            <Separator className="my-4" />
+
+            <h2 className="font-semibold text-lg">3. 填写邮箱</h2>
             <div className="space-y-2">
               <Label htmlFor="email">接收授权码的邮箱</Label>
               <Input
@@ -117,14 +156,15 @@ export default function PayPage() {
           <div className="space-y-4">
             {submitted ? (
               <>
-                <h2 className="font-semibold text-lg">3. 扫码支付</h2>
+                <h2 className="font-semibold text-lg">4. 扫码支付</h2>
                 <Card>
                   <CardHeader className="text-center pb-2">
                     <CardTitle className="text-lg">
-                      支付宝扫码支付 <Badge variant="secondary">{product.price}</Badge>
+                      支付宝扫码支付 <Badge variant="secondary">{displayPrice}</Badge>
                     </CardTitle>
                     <p className="text-sm text-muted-foreground">
-                      请支付 <strong>{product.price}</strong>（{product.priceUSD}）
+                      请支付 <strong>{displayPrice}</strong>
+                      {couponApplied && <span className="line-through text-gray-400 ml-2">{product.price}</span>}
                     </p>
                   </CardHeader>
                   <CardContent className="flex flex-col items-center">
@@ -151,7 +191,7 @@ export default function PayPage() {
                   </CardContent>
                 </Card>
 
-                <h2 className="font-semibold text-lg">4. 输入授权码</h2>
+                <h2 className="font-semibold text-lg">5. 输入授权码</h2>
                 <Card>
                   <CardContent className="py-4 space-y-3">
                     <Label htmlFor="license">授权码（付款后通过邮件获取）</Label>
