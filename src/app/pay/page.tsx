@@ -179,12 +179,11 @@ export default function PayPage() {
                     </div>
               <div className="mt-4 space-y-2 text-center">
                 <p className="text-sm text-muted-foreground">
-                  支付后请保存支付宝交易号
+                  支付后截图保存支付记录
                 </p>
                 <Link href="/auto-activate">
                   <Button variant="outline" size="sm" className="text-indigo-600 border-indigo-600">
-                    <RefreshCw className="w-4 h-4 mr-2" />
-                    自助获取授权码（无需等待）
+                    发送截图获取授权码 →
                   </Button>
                 </Link>
               </div>
@@ -194,7 +193,7 @@ export default function PayPage() {
                 <h2 className="font-semibold text-lg">5. 输入授权码</h2>
                 <Card>
                   <CardContent className="py-4 space-y-3">
-                    <Label htmlFor="license">授权码（付款后通过邮件获取）</Label>
+                    <Label htmlFor="license">授权码（付款确认后通过邮件获取）</Label>
                     <div className="flex gap-2">
                       <Input
                         id="license"
@@ -207,7 +206,7 @@ export default function PayPage() {
                       </Button>
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      付款后1小时内发送授权码。如未收到，请邮件联系 247647898@qq.com
+                      付款确认后，授权码将发送到您填写的邮箱。如未收到，请邮件联系 247647898@qq.com
                     </p>
                   </CardContent>
                 </Card>

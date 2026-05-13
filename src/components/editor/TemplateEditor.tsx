@@ -134,7 +134,16 @@ export default function TemplateEditor({
   const [mobileTab, setMobileTab] = useState<'edit' | 'preview'>('edit');
 
   return (
-    <div className="flex flex-col md:flex-row h-[calc(100vh-64px)] md:gap-4 p-2 md:p-4">
+    <div className="flex flex-col h-[calc(100vh-56px)]">
+      {/* Pro notice bar */}
+      {!canExport && (
+        <div className="bg-indigo-50 border-b border-indigo-100 px-4 py-2 flex items-center justify-center gap-2 text-sm">
+          <Lock className="w-4 h-4 text-indigo-600" />
+          <span className="text-indigo-800">Preview mode — editing is free, export requires</span>
+          <Link href="/pay" className="text-indigo-600 font-medium hover:underline">Pro Plan</Link>
+        </div>
+      )}
+      <div className="flex flex-col md:flex-row flex-1 md:gap-4 p-2 md:p-4 overflow-hidden">
       {/* Mobile tab toggle - fixed at top on mobile */}
       <div className="flex md:hidden gap-2 mb-2">
         <Button size="sm" variant={mobileTab === 'edit' ? 'default' : 'outline'} onClick={() => setMobileTab('edit')} className="flex-1">
@@ -231,6 +240,7 @@ export default function TemplateEditor({
           )}
         </CardContent>
       </Card>
+      </div>
     </div>
   );
 }

@@ -86,18 +86,8 @@ export function activatePro(key: string): boolean {
   return false;
 }
 
-// For the auto-activation flow: get an unused license
-export function getUnusedLicense(): string | null {
-  const used = getUsedLicenses();
-  for (const code of licenses) {
-    if (!used.has(code)) {
-      return code;
-    }
-  }
-  return null;
-}
-
-export function claimLicense(code: string): boolean {
+// For the auto-activate flow: validate a license key and activate
+export function activateWithEmail(code: string): boolean {
   const normalized = code.trim().toUpperCase();
   if (VALID_LICENSES.has(normalized)) {
     markLicenseUsed(normalized);
