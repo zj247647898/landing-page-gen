@@ -7,9 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Label } from '@/components/ui/label';
-import { Check, QrCode, Copy, RefreshCw } from 'lucide-react';
+import { Check, QrCode, RefreshCw } from 'lucide-react';
 import { activatePro } from '@/lib/payment';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const products = [
@@ -169,8 +168,9 @@ export default function PayPage() {
                   </CardHeader>
                   <CardContent className="flex flex-col items-center">
                     <div className="border-2 border-dashed border-gray-200 rounded-xl p-4 bg-white">
-                      <Image
-                        src="/zhifubao.jpg"
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/landing-page-gen/zhifubao.jpg"
                         alt="Alipay QR Code"
                         width={220}
                         height={220}
