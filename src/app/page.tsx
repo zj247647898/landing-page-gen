@@ -73,7 +73,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Choose a template</h2>
-            <p className="text-muted-foreground">Select the perfect starting point for your landing page</p>
+            <p className="text-muted-foreground">{templates.length} templates — Select the perfect starting point for your landing page</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {templates.map((template) => (
@@ -95,6 +95,41 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Other Products */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">More from us</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">🛠️ Developer Toolkit</CardTitle>
+                <CardDescription>4 automation scripts for SEO audits, competitor analysis, email outreach, and CRO.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-bold text-indigo-600">From $49</span>
+                  <Link href="/toolkit"><Button variant="outline">View Tools</Button></Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">💻 Custom Development</CardTitle>
+                <CardDescription>Landing pages, MVPs, and full-stack apps. Fixed pricing, daily updates.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-bold text-indigo-600">From $499</span>
+                  <Link href="/services"><Button variant="outline">View Services</Button></Link>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

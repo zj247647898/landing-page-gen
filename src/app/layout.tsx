@@ -44,6 +44,12 @@ export default function RootLayout({
               <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Templates
               </Link>
+              <Link href="/toolkit" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                Toolkit
+              </Link>
+              <Link href="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                Services
+              </Link>
               <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </Link>

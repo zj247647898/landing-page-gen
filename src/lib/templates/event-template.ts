@@ -1,0 +1,130 @@
+import { TemplateConfig } from './types';
+
+export const eventTemplate: TemplateConfig = {
+  id: 'event',
+  name: 'Event / Conference',
+  description: 'Event landing page with schedule, speakers, sponsors, and ticket CTA',
+  category: 'Event',
+  thumbnail: '/thumbnails/event.png',
+  fields: [
+    { id: 'eventName', label: 'Event Name', type: 'text', defaultValue: 'DevSummit 2026', required: true },
+    { id: 'tagline', label: 'Tagline', type: 'text', defaultValue: 'The Ultimate Developer Conference', required: true },
+    { id: 'date', label: 'Event Date', type: 'text', defaultValue: 'October 15-17, 2026', required: true },
+    { id: 'location', label: 'Location', type: 'text', defaultValue: 'San Francisco, CA', required: true },
+    { id: 'primaryColor', label: 'Primary Color', type: 'color', defaultValue: '#8b5cf6', required: true },
+    { id: 'ctaText', label: 'CTA Text', type: 'text', defaultValue: 'Get Tickets', required: true },
+    { id: 'ctaLink', label: 'Ticket Link', type: 'text', defaultValue: '#tickets', required: true },
+    { id: 'attendees', label: 'Expected Attendees', type: 'text', defaultValue: '5,000+', required: true },
+    { id: 'speakers', label: 'Speaker Count', type: 'text', defaultValue: '50+', required: true },
+    { id: 'workshops', label: 'Workshop Count', type: 'text', defaultValue: '20+', required: true },
+    { id: 'speaker1', label: 'Speaker 1', type: 'text', defaultValue: 'Sarah Chen', required: true },
+    { id: 'speaker1Title', label: 'Speaker 1 Title', type: 'text', defaultValue: 'VP Engineering, Netflix', required: true },
+    { id: 'speaker2', label: 'Speaker 2', type: 'text', defaultValue: 'Marcus Johnson', required: true },
+    { id: 'speaker2Title', label: 'Speaker 2 Title', type: 'text', defaultValue: 'CTO, Stripe', required: true },
+    { id: 'speaker3', label: 'Speaker 3', type: 'text', defaultValue: 'Aisha Patel', required: true },
+    { id: 'speaker3Title', label: 'Speaker 3 Title', type: 'text', defaultValue: 'Founder, Vercel', required: true },
+    { id: 'ticketPrice', label: 'Ticket Price', type: 'text', defaultValue: '$299', required: true },
+    { id: 'earlyBird', label: 'Early Bird Price', type: 'text', defaultValue: '$199', required: true },
+    { id: 'footer', label: 'Footer', type: 'text', defaultValue: '© 2026 DevSummit. All rights reserved.', required: true },
+  ],
+  render: (data) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${data.eventName} - ${data.tagline}</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn-primary{display:inline-block;padding:18px 40px;background:${data.primaryColor};color:#fff;text-decoration:none;border-radius:8px;font-weight:700;transition:all .3s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 40px ${data.primaryColor}50}
+
+.hero{padding:120px 0 80px;text-align:center;background:linear-gradient(135deg,${data.primaryColor}15,#fff 60%)}
+.hero-badge{display:inline-block;padding:8px 20px;background:${data.primaryColor}15;color:${data.primaryColor};border-radius:100px;font-size:14px;font-weight:600;margin-bottom:24px}
+.hero h1{font-size:56px;font-weight:800;line-height:1.1;margin-bottom:16px}
+.hero .meta{font-size:20px;color:#6b7280;margin-bottom:32px}
+.hero .meta span{margin:0 12px}
+
+.stats{display:flex;gap:48px;justify-content:center;margin-top:48px}
+.stat{text-align:center}
+.stat .number{font-size:36px;font-weight:800;color:${data.primaryColor}}
+.stat .label{color:#6b7280;font-size:14px}
+
+.speakers{padding:80px 0;background:#f8fafc}
+.section-title{text-align:center;font-size:32px;font-weight:700;margin-bottom:48px}
+.speakers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:800px;margin:0 auto}
+.speaker{text-align:center}
+.speaker-avatar{width:120px;height:120px;background:linear-gradient(135deg,${data.primaryColor},#a78bfa);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:48px;color:#fff}
+.speaker h3{font-size:18px;font-weight:700}
+.speaker p{color:#6b7280;font-size:14px}
+
+.tickets{padding:80px 0;text-align:center}
+.ticket-card{display:inline-block;padding:48px 64px;background:#f8fafc;border-radius:24px}
+.ticket-card .price{font-size:48px;font-weight:800;color:${data.primaryColor}}
+.ticket-card .original{font-size:20px;text-decoration:line-through;color:#9ca3af;margin-left:12px}
+.ticket-card .period{color:#6b7280;margin:8px 0 24px}
+
+.footer{padding:40px 0;text-align:center;color:#9ca3af;font-size:14px}
+
+@media(max-width:768px){
+.hero h1{font-size:32px}
+.speakers-grid{grid-template-columns:1fr}
+.stats{flex-direction:column;gap:24px}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="container">
+<div class="hero-badge">📅 ${data.date}</div>
+<h1>${data.eventName}</h1>
+<div class="meta"><span>📍 ${data.location}</span><span>🎤 ${data.speakers} Speakers</span><span>🛠️ ${data.workshops} Workshops</span></div>
+<a href="${data.ctaLink}" class="btn-primary">${data.ctaText}</a>
+<div class="stats">
+<div class="stat"><div class="number">${data.attendees}</div><div class="label">Attendees</div></div>
+<div class="stat"><div class="number">${data.speakers}</div><div class="label">Speakers</div></div>
+<div class="stat"><div class="number">${data.workshops}</div><div class="label">Workshops</div></div>
+</div>
+</div>
+</section>
+
+<section class="speakers">
+<div class="container">
+<h2 class="section-title">Featured Speakers</h2>
+<div class="speakers-grid">
+<div class="speaker">
+<div class="speaker-avatar">👩‍💼</div>
+<h3>${data.speaker1}</h3>
+<p>${data.speaker1Title}</p>
+</div>
+<div class="speaker">
+<div class="speaker-avatar">👨‍💼</div>
+<h3>${data.speaker2}</h3>
+<p>${data.speaker2Title}</p>
+</div>
+<div class="speaker">
+<div class="speaker-avatar">👩‍💻</div>
+<h3>${data.speaker3}</h3>
+<p>${data.speaker3Title}</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="tickets">
+<div class="container">
+<div class="ticket-card">
+<div><span class="price">${data.earlyBird}</span><span class="original">${data.ticketPrice}</span></div>
+<div class="period">Early Bird Price (Limited)</div>
+<a href="${data.ctaLink}" class="btn-primary">${data.ctaText}</a>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container"><p>${data.footer}</p></div>
+</footer>
+</body>
+</html>`,
+};
