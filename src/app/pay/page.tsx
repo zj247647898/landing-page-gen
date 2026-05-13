@@ -13,7 +13,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const products = [
-  { id: 'pro', name: 'Pro Plan', price: '¥199', priceUSD: '$29', desc: 'All 9 templates + HTML export' },
+  { id: 'pro', name: 'Pro Plan', price: '¥199', priceUSD: '$29', desc: 'All 15 templates + HTML export' },
   { id: 'agency', name: 'Agency Plan', price: '¥699', priceUSD: '$99', desc: 'Everything in Pro + source code' },
   { id: 'toolkit', name: 'Developer Toolkit Bundle', price: '¥999', priceUSD: '$149', desc: 'All 4 automation tools' },
   { id: 'service-lp', name: 'Custom Landing Page', price: '¥3,499', priceUSD: '$499', desc: '3-5 day delivery' },

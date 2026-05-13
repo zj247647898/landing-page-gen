@@ -10,6 +10,19 @@ export const metadata: Metadata = {
 const updates = [
   {
     date: '2026-05-13',
+    badge: 'New',
+    title: '6 New Templates — Now 15 Total',
+    items: [
+      'Startup Launch template — Problem/Solution layout, early adopter pricing',
+      'Restaurant / Café template — Menu highlights, reservations, warm design',
+      'Fitness / Gym template — Classes, trainers, free trial CTA',
+      'Real Estate template — Featured listings, agent contact, professional design',
+      'Nonprofit / Charity template — Mission, impact stats, donation options',
+      'Podcast template — Episodes, host info, subscribe platforms, dark theme',
+    ],
+  },
+  {
+    date: '2026-05-13',
     badge: 'Launch',
     title: 'LP Gen v1.0 — Public Launch',
     items: [

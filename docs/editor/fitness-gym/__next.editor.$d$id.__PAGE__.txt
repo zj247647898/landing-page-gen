@@ -1,0 +1,266 @@
+1:"$Sreact.fragment"
+2:I[27381,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js","/landing-page-gen/_next/static/chunks/01_mmhm5kzyg9.js","/landing-page-gen/_next/static/chunks/093_z8.qny0fk.js","/landing-page-gen/_next/static/chunks/0w6f0fockxen~.js","/landing-page-gen/_next/static/chunks/0g01l.l5h~i5a.js"],"default"]
+9:I[97367,["/landing-page-gen/_next/static/chunks/13h-0fd.p-1ga.js","/landing-page-gen/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+3:T3562,<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IronForge Fitness - Transform Your Body. Unleash Your Potential.</title>
+<meta name="description" content="Join thousands who have already transformed their lives. World-class equipment, expert trainers, and a community that pushes you forward.">
+<meta name="keywords" content="gym, fitness, workout, personal training, IronForge Fitness">
+<meta property="og:title" content="IronForge Fitness - Transform Your Body. Unleash Your Potential.">
+<meta property="og:description" content="Join thousands who have already transformed their lives. World-class equipment, expert trainers, and a community that pushes you forward.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IronForge Fitness - Transform Your Body. Unleash Your Potential.">
+<meta name="twitter:description" content="Join thousands who have already transformed their lives. World-class equipment, expert trainers, and a community that pushes you forward.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;padding:16px 0}
+.nav .container{display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-size:20px;font-weight:800;color:#16a34a}
+.nav-brand span{color:#eab308}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:#4b5563;text-decoration:none;font-weight:500;font-size:14px;transition:color .2s}
+.nav-links a:hover{color:#16a34a}
+.nav-cta{padding:10px 24px;background:#16a34a;color:#fff!important;border-radius:8px;font-weight:600}
+.nav-cta:hover{background:#16a34add!important}
+
+/* Hero */
+.hero{padding:140px 0 100px;background:linear-gradient(135deg,#16a34a12 0%,#fff 50%,#eab30810 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,#16a34a15,transparent 70%);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-150px;left:-150px;width:400px;height:400px;background:radial-gradient(circle,#eab30815,transparent 70%);border-radius:50%}
+.hero .container{position:relative;z-index:1;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:linear-gradient(135deg,#16a34a,#eab308);color:#fff;border-radius:100px;font-size:15px;font-weight:700;margin-bottom:28px;animation:pulse-badge 2s infinite}
+@keyframes pulse-badge{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.hero h1{font-size:64px;font-weight:900;line-height:1.05;margin-bottom:20px;letter-spacing:-2px;background:linear-gradient(135deg,#111827,#16a34a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:20px;color:#6b7280;max-width:640px;margin:0 auto 36px;line-height:1.7}
+.hero-cta{display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap}
+.btn-primary{display:inline-block;padding:18px 44px;background:linear-gradient(135deg,#16a34a,#16a34acc);color:#fff;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;transition:all .3s;box-shadow:0 4px 24px #16a34a40}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px #16a34a50}
+.btn-secondary{display:inline-block;padding:18px 44px;background:#fff;color:#16a34a;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;border:2px solid #16a34a;transition:all .3s}
+.btn-secondary:hover{background:#16a34a10;transform:translateY(-3px)}
+.hero-stats{display:flex;gap:48px;justify-content:center;margin-top:56px}
+.hero-stat{text-align:center}
+.hero-stat .number{font-size:36px;font-weight:900;color:#16a34a}
+.hero-stat .label{color:#9ca3af;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1px}
+
+/* Classes */
+.classes{padding:100px 0;background:#f9fafb}
+.section-header{text-align:center;margin-bottom:60px}
+.section-header .emoji{font-size:40px;margin-bottom:12px}
+.section-header h2{font-size:40px;font-weight:800;margin-bottom:12px;letter-spacing:-1px}
+.section-header p{color:#6b7280;font-size:18px}
+.classes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.class-card{background:#fff;border-radius:20px;padding:40px 32px;text-align:center;transition:all .3s;border:1px solid #e5e7eb}
+.class-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.08);border-color:#16a34a40}
+.class-icon{width:72px;height:72px;background:linear-gradient(135deg,#16a34a15,#eab30815);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px}
+.class-card h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.class-card .time{color:#16a34a;font-weight:600;font-size:14px;margin-bottom:12px}
+.class-card .desc{color:#6b7280;font-size:14px;line-height:1.6}
+
+/* Trainers */
+.trainers{padding:100px 0}
+.trainers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:800px;margin:0 auto}
+.trainer-card{background:#fff;border-radius:24px;padding:40px;display:flex;align-items:center;gap:24px;border:1px solid #e5e7eb;transition:all .3s}
+.trainer-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,0.06);border-color:#16a34a30}
+.trainer-avatar{width:80px;height:80px;background:linear-gradient(135deg,#16a34a,#eab308);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0}
+.trainer-info h3{font-size:20px;font-weight:700;margin-bottom:4px}
+.trainer-info .specialty{color:#16a34a;font-weight:600;font-size:14px}
+.trainer-info .bio{color:#6b7280;font-size:14px;margin-top:8px;line-height:1.5}
+
+/* Pricing */
+.pricing{padding:100px 0;background:linear-gradient(135deg,#16a34a08,#eab30808)}
+.pricing-card{max-width:520px;margin:0 auto;background:#fff;border-radius:28px;padding:56px 48px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,0.06);border:2px solid #16a34a30;position:relative;overflow:hidden}
+.pricing-card::before{content:'MOST POPULAR';position:absolute;top:20px;right:-32px;background:linear-gradient(135deg,#16a34a,#eab308);color:#fff;font-size:11px;font-weight:700;padding:6px 40px;transform:rotate(45deg);letter-spacing:1px}
+.pricing-card .badge{display:inline-block;padding:6px 16px;background:#eab30820;color:#eab308;border-radius:100px;font-size:13px;font-weight:700;margin-bottom:20px}
+.pricing-card .price{font-size:72px;font-weight:900;color:#16a34a;line-height:1}
+.pricing-card .price span{font-size:24px;font-weight:600;color:#9ca3af}
+.pricing-card .price-period{color:#9ca3af;font-size:16px;margin:8px 0 32px}
+.pricing-features{list-style:none;text-align:left;margin-bottom:36px}
+.pricing-features li{padding:12px 0;border-bottom:1px solid #f3f4f6;font-size:15px;display:flex;align-items:center;gap:12px}
+.pricing-features li::before{content:'✅';font-size:16px;flex-shrink:0}
+.pricing-urgency{margin-top:16px;color:#ef4444;font-weight:600;font-size:14px;animation:urgency-blink 1.5s infinite}
+@keyframes urgency-blink{0%,100%{opacity:1}50%{opacity:.6}}
+
+/* CTA */
+.cta-section{padding:100px 0;background:linear-gradient(135deg,#16a34a,#16a34add);text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:radial-gradient(circle,#eab30830,transparent 70%);border-radius:50%}
+.cta-section .container{position:relative;z-index:1}
+.cta-section h2{font-size:44px;font-weight:900;color:#fff;margin-bottom:16px;letter-spacing:-1px}
+.cta-section p{color:rgba(255,255,255,0.85);font-size:20px;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto}
+.btn-white{display:inline-block;padding:20px 52px;background:#fff;color:#16a34a;text-decoration:none;border-radius:12px;font-weight:800;font-size:17px;transition:all .3s;box-shadow:0 4px 24px rgba(0,0,0,0.15)}
+.btn-white:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.2)}
+.cta-countdown{margin-top:24px;color:rgba(255,255,255,0.7);font-size:14px;font-weight:500}
+
+/* Footer */
+.footer{padding:40px 0;text-align:center;background:#111827;color:#9ca3af;font-size:14px}
+.footer a{color:#16a34a;text-decoration:none}
+
+/* Responsive */
+@media(max-width:768px){
+.nav-links{display:none}
+.hero h1{font-size:36px}
+.hero p{font-size:16px}
+.hero-stats{flex-direction:column;gap:20px}
+.classes-grid{grid-template-columns:1fr}
+.trainers-grid{grid-template-columns:1fr}
+.pricing-card{padding:40px 28px}
+.pricing-card .price{font-size:56px}
+.cta-section h2{font-size:30px}
+.hero-cta{flex-direction:column}
+.btn-primary,.btn-secondary{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+<div class="container">
+<div class="nav-brand">💪 IronForge Fitness<span>.</span></div>
+<div class="nav-links">
+<a href="#classes">Classes</a>
+<a href="#trainers">Trainers</a>
+<a href="#pricing">Pricing</a>
+<a href="#signup" class="nav-cta">Start Free Trial</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="container">
+<div class="hero-badge">🔥 7-Day Free Trial — Limited Spots!</div>
+<h1>Transform Your Body. Unleash Your Potential.</h1>
+<p>Join thousands who have already transformed their lives. World-class equipment, expert trainers, and a community that pushes you forward.</p>
+<div class="hero-cta">
+<a href="#signup" class="btn-primary">Start Free Trial →</a>
+<a href="#pricing" class="btn-secondary">View Plans</a>
+</div>
+<div class="hero-stats">
+<div class="hero-stat"><div class="number">5,000+</div><div class="label">Active Members</div></div>
+<div class="hero-stat"><div class="number">50+</div><div class="label">Weekly Classes</div></div>
+<div class="hero-stat"><div class="number">98%</div><div class="label">Satisfaction Rate</div></div>
+</div>
+</div>
+</section>
+
+<!-- Classes -->
+<section class="classes" id="classes">
+<div class="container">
+<div class="section-header">
+<div class="emoji">🏋️</div>
+<h2>Our Classes</h2>
+<p>Find the perfect workout that fits your goals and schedule</p>
+</div>
+<div class="classes-grid">
+<div class="class-card">
+<div class="class-icon">⚡</div>
+<h3>HIIT Blast</h3>
+<div class="time">Mon/Wed/Fri 6:00 AM</div>
+<div class="desc">High-intensity intervals designed to torch calories and boost your endurance. All fitness levels welcome.</div>
+</div>
+<div class="class-card">
+<div class="class-icon">🧘</div>
+<h3>Power Yoga</h3>
+<div class="time">Tue/Thu 7:00 AM</div>
+<div class="desc">Build flexibility, balance, and inner strength. Perfect for recovery days or as your primary practice.</div>
+</div>
+<div class="class-card">
+<div class="class-icon">💪</div>
+<h3>Strength Training</h3>
+<div class="time">Mon-Fri 5:30 PM</div>
+<div class="desc">Sculpt and strengthen with progressive overload training. Expert-guided form and technique for maximum results.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trainers -->
+<section class="trainers" id="trainers">
+<div class="container">
+<div class="section-header">
+<div class="emoji">🥇</div>
+<h2>Expert Trainers</h2>
+<p>Your goals, their mission — meet the team that gets results</p>
+</div>
+<div class="trainers-grid">
+<div class="trainer-card">
+<div class="trainer-avatar">🏃</div>
+<div class="trainer-info">
+<h3>Alex Rivera</h3>
+<div class="specialty">HIIT & Cardio</div>
+<div class="bio">Certified trainer with 10+ years of experience transforming lives through high-energy workouts.</div>
+</div>
+</div>
+<div class="trainer-card">
+<div class="trainer-avatar">🏅</div>
+<div class="trainer-info">
+<h3>Jordan Lee</h3>
+<div class="specialty">Strength & Conditioning</div>
+<div class="bio">Former competitive athlete dedicated to helping you build strength safely and effectively.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing">
+<div class="container">
+<div class="section-header">
+<div class="emoji">💎</div>
+<h2>Membership</h2>
+<p>Simple pricing. No hidden fees. Cancel anytime.</p>
+</div>
+<div class="pricing-card">
+<div class="badge">🔥 FREE 7-DAY TRIAL</div>
+<div class="price">$49<span>/mo</span></div>
+<div class="price-period">Billed monthly, cancel anytime</div>
+<ul class="pricing-features">
+<li>Unlimited gym access 24/7</li>
+<li>All group classes included</li>
+<li>1 personal training session/month</li>
+<li>Locker room & sauna access</li>
+<li>Nutrition guide & meal plan</li>
+<li>Mobile app workout tracking</li>
+</ul>
+<a href="#signup" class="btn-primary" style="width:100%;text-align:center">Start 7-Day Free Trial →</a>
+<div class="pricing-urgency">⚡ Only a few trial spots left this month — don't miss out!</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<div class="container">
+<h2>Ready to Transform? 🚀</h2>
+<p>Your 7-day free trial starts today. No credit card required. No commitment. Just results.</p>
+<a href="#signup" class="btn-white">Start Free Trial — It's Free →</a>
+<div class="cta-countdown">⏰ This offer won't last — secure your spot now!</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<p>© 2026 IronForge Fitness. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"templateId":"fitness-gym","templateName":"Fitness / Gym","templateDescription":"Gym and fitness landing page with classes, trainers, membership pricing, and free trial CTA","templateCategory":"Fitness","fields":[{"id":"gymName","label":"Gym Name","type":"text","defaultValue":"IronForge Fitness","required":true},{"id":"tagline","label":"Tagline","type":"text","defaultValue":"Transform Your Body. Unleash Your Potential.","required":true},{"id":"description","label":"Description","type":"textarea","defaultValue":"Join thousands who have already transformed their lives. World-class equipment, expert trainers, and a community that pushes you forward.","required":true},{"id":"ctaText","label":"CTA Text","type":"text","defaultValue":"Start Free Trial","required":true},{"id":"ctaLink","label":"CTA Link","type":"text","defaultValue":"#signup","required":true},{"id":"primaryColor","label":"Primary Color","type":"color","defaultValue":"#16a34a","required":true},{"id":"secondaryColor","label":"Secondary Color","type":"color","defaultValue":"#eab308","required":true},{"id":"class1","label":"Class 1 Name","type":"text","defaultValue":"HIIT Blast","required":true},{"id":"class1Time","label":"Class 1 Time","type":"text","defaultValue":"Mon/Wed/Fri 6:00 AM","required":true},{"id":"class2","label":"Class 2 Name","type":"text","defaultValue":"Power Yoga","required":true},{"id":"class2Time","label":"Class 2 Time","type":"text","defaultValue":"Tue/Thu 7:00 AM","required":true},{"id":"class3","label":"Class 3 Name","type":"text","defaultValue":"Strength Training","required":true},{"id":"class3Time","label":"Class 3 Time","type":"text","defaultValue":"Mon-Fri 5:30 PM","required":true},{"id":"trainer1","label":"Trainer 1 Name","type":"text","defaultValue":"Alex Rivera","required":true},{"id":"trainer1Specialty","label":"Trainer 1 Specialty","type":"text","defaultValue":"HIIT & Cardio","required":true},{"id":"trainer2","label":"Trainer 2 Name","type":"text","defaultValue":"Jordan Lee","required":true},{"id":"trainer2Specialty","label":"Trainer 2 Specialty","type":"text","defaultValue":"Strength & Conditioning","required":true},{"id":"membershipPrice","label":"Membership Price","type":"text","defaultValue":"$$49","required":true},{"id":"trialDays","label":"Free Trial Days","type":"text","defaultValue":"7","required":true},{"id":"footerText","label":"Footer Text","type":"text","defaultValue":"© 2026 IronForge Fitness. All rights reserved.","required":true}],"initialHtml":"$3"}],["$L4","$L5","$L6","$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"65JAeFEnwlQnCe4pNdh4V"}
+4:["$","script","script-0",{"src":"/landing-page-gen/_next/static/chunks/01_mmhm5kzyg9.js","async":true}]
+5:["$","script","script-1",{"src":"/landing-page-gen/_next/static/chunks/093_z8.qny0fk.js","async":true}]
+6:["$","script","script-2",{"src":"/landing-page-gen/_next/static/chunks/0w6f0fockxen~.js","async":true}]
+7:["$","script","script-3",{"src":"/landing-page-gen/_next/static/chunks/0g01l.l5h~i5a.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

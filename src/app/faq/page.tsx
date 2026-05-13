@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'Is it really free to start?',
-    a: 'Yes! The SaaS Modern template is completely free to use. You can customize it with our editor and preview it live. To export HTML or access all 9 templates, upgrade to Pro for ¥199.',
+    a: 'Yes! The SaaS Modern template is completely free to use. You can customize it with our editor and preview it live. To export HTML or access all 15 templates, upgrade to Pro for ¥199.',
   },
   {
     q: 'What do I get with Pro?',
-    a: 'Pro unlocks all 9 templates, full customization, and HTML/CSS export (ZIP download). You also get a commercial license to use templates for client work. One-time payment, no subscription.',
+    a: 'Pro unlocks all 15 templates, full customization, and HTML/CSS export (ZIP download). You also get a commercial license to use templates for client work. One-time payment, no subscription.',
   },
   {
     q: 'How does the export work?',

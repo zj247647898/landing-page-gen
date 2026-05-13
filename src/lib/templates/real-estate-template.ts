@@ -1,0 +1,321 @@
+import { TemplateConfig } from './types';
+
+export const realEstateTemplate: TemplateConfig = {
+  id: 'real-estate',
+  name: 'Real Estate',
+  description: 'Real estate landing page with featured listings, agent profile, and contact form CTA',
+  category: 'Real Estate',
+  thumbnail: '/thumbnails/real-estate.png',
+  fields: [
+    { id: 'agencyName', label: 'Agency Name', type: 'text', defaultValue: 'PrimeHome Realty', required: true },
+    { id: 'tagline', label: 'Tagline', type: 'text', defaultValue: 'Find Your Dream Home Today', required: true },
+    { id: 'description', label: 'Description', type: 'textarea', defaultValue: 'With over 15 years of experience in the local market, we help you find the perfect property. From luxury homes to cozy starter houses, our expert team makes the buying and selling process seamless.', required: true },
+    { id: 'ctaText', label: 'CTA Text', type: 'text', defaultValue: 'Schedule a Viewing', required: true },
+    { id: 'ctaLink', label: 'CTA Link', type: 'text', defaultValue: '#contact', required: true },
+    { id: 'primaryColor', label: 'Primary Color', type: 'color', defaultValue: '#1e40af', required: true },
+    { id: 'secondaryColor', label: 'Secondary Color', type: 'color', defaultValue: '#0891b2', required: true },
+    { id: 'listing1', label: 'Listing 1 Title', type: 'text', defaultValue: 'Modern Luxury Villa', required: true },
+    { id: 'listing1Price', label: 'Listing 1 Price', type: 'text', defaultValue: '$1,250,000', required: true },
+    { id: 'listing1Beds', label: 'Listing 1 Beds', type: 'text', defaultValue: '4 Beds', required: true },
+    { id: 'listing1Area', label: 'Listing 1 Area', type: 'text', defaultValue: '3,200 sqft', required: true },
+    { id: 'listing2', label: 'Listing 2 Title', type: 'text', defaultValue: 'Downtown Penthouse', required: true },
+    { id: 'listing2Price', label: 'Listing 2 Price', type: 'text', defaultValue: '$890,000', required: true },
+    { id: 'listing2Beds', label: 'Listing 2 Beds', type: 'text', defaultValue: '3 Beds', required: true },
+    { id: 'listing2Area', label: 'Listing 2 Area', type: 'text', defaultValue: '2,100 sqft', required: true },
+    { id: 'listing3', label: 'Listing 3 Title', type: 'text', defaultValue: 'Suburban Family Home', required: true },
+    { id: 'listing3Price', label: 'Listing 3 Price', type: 'text', defaultValue: '$575,000', required: true },
+    { id: 'listing3Beds', label: 'Listing 3 Beds', type: 'text', defaultValue: '3 Beds', required: true },
+    { id: 'listing3Area', label: 'Listing 3 Area', type: 'text', defaultValue: '1,800 sqft', required: true },
+    { id: 'agentName', label: 'Agent Name', type: 'text', defaultValue: 'Sarah Mitchell', required: true },
+    { id: 'agentTitle', label: 'Agent Title', type: 'text', defaultValue: 'Senior Real Estate Agent', required: true },
+    { id: 'agentPhone', label: 'Agent Phone', type: 'text', defaultValue: '(555) 123-4567', required: true },
+    { id: 'soldCount', label: 'Homes Sold', type: 'text', defaultValue: '500+', required: true },
+    { id: 'footerText', label: 'Footer Text', type: 'text', defaultValue: '© 2026 PrimeHome Realty. Licensed Real Estate Brokerage. All rights reserved.', required: true },
+  ],
+  render: (data) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${data.agencyName} — ${data.tagline}</title>
+<meta name="description" content="${data.description}">
+<meta name="keywords" content="real estate, homes for sale, property, ${data.agencyName}">
+<meta property="og:title" content="${data.agencyName} — ${data.tagline}">
+<meta property="og:description" content="${data.description}">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1f2937}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+
+/* Navigation */
+.nav{padding:16px 0;position:absolute;top:0;left:0;right:0;z-index:10}
+.nav .container{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+.nav-logo span{color:${data.secondaryColor}}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.85);font-size:14px;font-weight:500;transition:color .3s}
+.nav-links a:hover{color:#fff}
+.nav-cta{padding:10px 24px;background:${data.primaryColor};color:#fff;border-radius:8px;font-weight:600;font-size:14px;transition:all .3s}
+.nav-cta:hover{background:${data.secondaryColor};transform:translateY(-1px)}
+
+/* Hero */
+.hero{padding:160px 0 100px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 60%,${data.primaryColor}40 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,${data.secondaryColor}20,transparent 70%);border-radius:50%}
+.hero-content{max-width:700px;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(255,255,255,.1);border-radius:100px;font-size:13px;font-weight:500;margin-bottom:24px;backdrop-filter:blur(10px)}
+.hero h1{font-size:56px;font-weight:900;line-height:1.08;margin-bottom:20px;letter-spacing:-1.5px}
+.hero h1 span{background:linear-gradient(135deg,${data.secondaryColor},${data.primaryColor});-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:36px;max-width:560px;line-height:1.7}
+.hero-search{display:flex;gap:12px;max-width:560px;background:rgba(255,255,255,.1);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:12px}
+.hero-search input{flex:1;padding:14px 20px;border:none;background:rgba(255,255,255,.08);color:#fff;border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;outline:none}
+.hero-search input::placeholder{color:rgba(255,255,255,.45)}
+.hero-search button{padding:14px 28px;background:${data.primaryColor};color:#fff;border:none;border-radius:10px;font-family:'Inter',sans-serif;font-weight:700;font-size:15px;cursor:pointer;transition:all .3s;white-space:nowrap}
+.hero-search button:hover{background:${data.secondaryColor};transform:translateY(-1px)}
+.hero-stats{display:flex;gap:48px;margin-top:48px}
+.hero-stat{text-align:left}
+.hero-stat .number{font-size:32px;font-weight:800;color:#fff}
+.hero-stat .label{font-size:13px;color:rgba(255,255,255,.6);font-weight:500}
+
+/* Listings */
+.listings{padding:96px 0;background:#f8fafc}
+.section-header{text-align:center;margin-bottom:56px}
+.section-header .overline{display:inline-block;font-size:13px;font-weight:600;color:${data.primaryColor};text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.section-header h2{font-size:40px;font-weight:800;letter-spacing:-0.5px;color:#0f172a}
+.listings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.listing-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06);transition:all .4s;border:1px solid #f1f5f9}
+.listing-card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,.12)}
+.listing-image{height:220px;background:linear-gradient(135deg,${data.primaryColor}30,${data.secondaryColor}30);display:flex;align-items:center;justify-content:center;font-size:72px;position:relative}
+.listing-badge{position:absolute;top:16px;left:16px;padding:6px 14px;background:${data.primaryColor};color:#fff;border-radius:8px;font-size:12px;font-weight:700}
+.listing-body{padding:28px}
+.listing-price{font-size:28px;font-weight:800;color:${data.primaryColor};margin-bottom:8px}
+.listing-title{font-size:18px;font-weight:700;color:#0f172a;margin-bottom:16px}
+.listing-details{display:flex;gap:20px;color:#64748b;font-size:14px;font-weight:500}
+.listing-details span{display:flex;align-items:center;gap:6px}
+
+/* Stats */
+.stats{padding:72px 0;background:linear-gradient(135deg,${data.primaryColor},${data.primaryColor}dd,#0f172a);color:#fff}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-item .number{font-size:44px;font-weight:900;margin-bottom:4px}
+.stat-item .label{font-size:14px;color:rgba(255,255,255,.7);font-weight:500}
+
+/* Agent */
+.agent{padding:96px 0}
+.agent-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.agent-avatar{width:280px;height:280px;background:linear-gradient(135deg,${data.primaryColor},${data.secondaryColor});border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:120px;margin:0 auto;box-shadow:0 20px 60px ${data.primaryColor}30}
+.agent-info .overline{display:inline-block;font-size:13px;font-weight:600;color:${data.primaryColor};text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.agent-info h2{font-size:36px;font-weight:800;color:#0f172a;margin-bottom:8px}
+.agent-info .title{font-size:16px;color:${data.secondaryColor};font-weight:600;margin-bottom:20px}
+.agent-info p{color:#64748b;line-height:1.8;margin-bottom:28px}
+.agent-contact{display:flex;gap:16px;flex-wrap:wrap}
+.agent-contact a{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:600;font-size:15px;transition:all .3s}
+.agent-contact .btn-primary{background:${data.primaryColor};color:#fff}
+.agent-contact .btn-primary:hover{background:${data.primaryColor}cc;transform:translateY(-2px);box-shadow:0 10px 30px ${data.primaryColor}40}
+.agent-contact .btn-outline{border:2px solid ${data.primaryColor};color:${data.primaryColor}}
+.agent-contact .btn-outline:hover{background:${data.primaryColor}10;transform:translateY(-2px)}
+
+/* CTA */
+.cta{padding:96px 0;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;bottom:-40%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,${data.primaryColor}25,transparent 70%);border-radius:50%}
+.cta::after{content:'';position:absolute;top:-30%;right:-5%;width:300px;height:300px;background:radial-gradient(circle,${data.secondaryColor}20,transparent 70%);border-radius:50%}
+.cta-content{position:relative;z-index:1}
+.cta h2{font-size:44px;font-weight:900;margin-bottom:16px;letter-spacing:-0.5px}
+.cta p{font-size:18px;color:rgba(255,255,255,.7);margin-bottom:36px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta .btn-primary{display:inline-block;padding:18px 44px;background:${data.primaryColor};color:#fff;border-radius:12px;font-weight:700;font-size:16px;transition:all .3s}
+.cta .btn-primary:hover{background:${data.secondaryColor};transform:translateY(-2px);box-shadow:0 12px 40px ${data.primaryColor}50}
+.cta-note{font-size:13px;color:rgba(255,255,255,.45);margin-top:16px}
+
+/* Footer */
+.footer{padding:40px 0;text-align:center;background:#0f172a;color:rgba(255,255,255,.5);font-size:14px}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px}
+.footer-links a{color:rgba(255,255,255,.6);transition:color .3s;font-size:13px}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:768px){
+.hero{padding:120px 0 64px}
+.hero h1{font-size:32px;letter-spacing:-0.5px}
+.hero-search{flex-direction:column}
+.hero-stats{gap:24px;flex-wrap:wrap}
+.hero-stat .number{font-size:24px}
+.listings-grid{grid-template-columns:1fr}
+.stats-grid{grid-template-columns:repeat(2,1fr)}
+.agent-grid{grid-template-columns:1fr;text-align:center}
+.agent-avatar{width:180px;height:180px;font-size:80px}
+.agent-contact{justify-content:center}
+.cta h2{font-size:28px}
+.nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+<div class="container">
+<div class="nav-logo">🏠 ${data.agencyName}<span>.</span></div>
+<div class="nav-links">
+<a href="#listings">Listings</a>
+<a href="#stats">About</a>
+<a href="#agent">Agent</a>
+<a href="${data.ctaLink}" class="nav-cta">${data.ctaText}</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-badge">🏘️ Trusted by ${data.soldCount} homeowners</div>
+<h1>${data.tagline.split(' ').slice(0,-1).join(' ')} <span>${data.tagline.split(' ').slice(-1)}</span></h1>
+<p>${data.description}</p>
+<div class="hero-search">
+<input type="text" placeholder="Search by city, neighborhood, or ZIP...">
+<button>🔍 Search</button>
+</div>
+<div class="hero-stats">
+<div class="hero-stat">
+<div class="number">${data.soldCount}</div>
+<div class="label">Homes Sold</div>
+</div>
+<div class="hero-stat">
+<div class="number">$2B+</div>
+<div class="label">Total Sales Volume</div>
+</div>
+<div class="hero-stat">
+<div class="number">4.9⭐</div>
+<div class="label">Client Rating</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Featured Listings -->
+<section class="listings" id="listings">
+<div class="container">
+<div class="section-header">
+<div class="overline">Featured Properties</div>
+<h2>Explore Our Latest Listings</h2>
+</div>
+<div class="listings-grid">
+<div class="listing-card">
+<div class="listing-image">
+🏠
+<div class="listing-badge">Featured</div>
+</div>
+<div class="listing-body">
+<div class="listing-price">${data.listing1Price}</div>
+<div class="listing-title">${data.listing1}</div>
+<div class="listing-details">
+<span>🛏️ ${data.listing1Beds}</span>
+<span>📐 ${data.listing1Area}</span>
+</div>
+</div>
+</div>
+<div class="listing-card">
+<div class="listing-image">
+🏙️
+<div class="listing-badge">New</div>
+</div>
+<div class="listing-body">
+<div class="listing-price">${data.listing2Price}</div>
+<div class="listing-title">${data.listing2}</div>
+<div class="listing-details">
+<span>🛏️ ${data.listing2Beds}</span>
+<span>📐 ${data.listing2Area}</span>
+</div>
+</div>
+</div>
+<div class="listing-card">
+<div class="listing-image">
+🏡
+<div class="listing-badge">Hot</div>
+</div>
+<div class="listing-body">
+<div class="listing-price">${data.listing3Price}</div>
+<div class="listing-title">${data.listing3}</div>
+<div class="listing-details">
+<span>🛏️ ${data.listing3Beds}</span>
+<span>📐 ${data.listing3Area}</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Stats -->
+<section class="stats" id="stats">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item">
+<div class="number">${data.soldCount}</div>
+<div class="label">Homes Sold</div>
+</div>
+<div class="stat-item">
+<div class="number">98%</div>
+<div class="label">Client Satisfaction</div>
+</div>
+<div class="stat-item">
+<div class="number">15+</div>
+<div class="label">Years Experience</div>
+</div>
+<div class="stat-item">
+<div class="number">24hr</div>
+<div class="label">Avg. Response Time</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Agent -->
+<section class="agent" id="agent">
+<div class="container">
+<div class="agent-grid">
+<div class="agent-avatar">👩‍💼</div>
+<div class="agent-info">
+<div class="overline">Your Agent</div>
+<h2>${data.agentName}</h2>
+<div class="title">${data.agentTitle}</div>
+<p>With a proven track record of ${data.soldCount} homes sold, ${data.agentName} brings unmatched expertise and dedication to every transaction. Whether you're buying your first home or selling a luxury property, you'll receive personalized guidance every step of the way.</p>
+<div class="agent-contact">
+<a href="${data.ctaLink}" class="btn-primary">${data.ctaText}</a>
+<a href="tel:${data.agentPhone}" class="btn-outline">📞 ${data.agentPhone}</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+<div class="cta-content">
+<h2>Ready to Find Your Perfect Home?</h2>
+<p>Get in touch today and let our expert team guide you through the entire process — from search to closing.</p>
+<a href="${data.ctaLink}" class="btn-primary">${data.ctaText}</a>
+<div class="cta-note">No commitment required. Free initial consultation.</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-links">
+<a href="#listings">Listings</a>
+<a href="#stats">About</a>
+<a href="#agent">Contact</a>
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+</div>
+<p>${data.footerText}</p>
+</div>
+</footer>
+
+</body>
+</html>`,
+};

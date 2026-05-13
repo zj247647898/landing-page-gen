@@ -1,0 +1,293 @@
+import { TemplateConfig } from './types';
+
+export const startupTemplate: TemplateConfig = {
+  id: 'startup-launch',
+  name: 'Startup Launch',
+  description: 'Startup launch page with hero, problem/solution, features, early adopter CTA',
+  category: 'Startup',
+  thumbnail: '/thumbnails/startup.png',
+  fields: [
+    { id: 'brandName', label: 'Brand Name', type: 'text', defaultValue: 'LaunchPad', required: true },
+    { id: 'tagline', label: 'Main Tagline', type: 'text', defaultValue: 'Ship your startup idea in days, not months', required: true },
+    { id: 'subheadline', label: 'Subheadline', type: 'textarea', defaultValue: 'The fastest way to validate, build, and launch your startup. Stop over-engineering, start shipping.', required: true },
+    { id: 'ctaText', label: 'CTA Button Text', type: 'text', defaultValue: 'Get Early Access', required: true },
+    { id: 'ctaLink', label: 'CTA Link', type: 'text', defaultValue: '#signup', required: true },
+    { id: 'primaryColor', label: 'Primary Color', type: 'color', defaultValue: '#0f172a', required: true },
+    { id: 'secondaryColor', label: 'Secondary Color', type: 'color', defaultValue: '#06b6d4', required: true },
+    { id: 'problemStatement', label: 'Problem Statement', type: 'textarea', defaultValue: 'Most startup founders spend months building products nobody wants. You waste time on features that don\'t matter, and by the time you launch, you\'ve run out of runway.', required: true },
+    { id: 'solutionStatement', label: 'Solution Statement', type: 'textarea', defaultValue: 'LaunchPad gives you a proven framework to validate ideas fast, build only what matters, and launch before your competition. From idea to paying customers in record time.', required: true },
+    { id: 'feature1Title', label: 'Feature 1 Title', type: 'text', defaultValue: 'Idea Validation Engine', required: true },
+    { id: 'feature1Desc', label: 'Feature 1 Description', type: 'textarea', defaultValue: 'Test your assumptions with real users before writing a single line of code. Get data-driven confidence in your idea.', required: true },
+    { id: 'feature2Title', label: 'Feature 2 Title', type: 'text', defaultValue: 'Rapid MVP Builder', required: true },
+    { id: 'feature2Desc', label: 'Feature 2 Description', type: 'textarea', defaultValue: 'Pre-built components and templates that let you go from concept to working product in days, not months.', required: true },
+    { id: 'feature3Title', label: 'Feature 3 Title', type: 'text', defaultValue: 'Launch Playbook', required: true },
+    { id: 'feature3Desc', label: 'Feature 3 Description', type: 'textarea', defaultValue: 'Step-by-step guides for Product Hunt, Reddit, and social launches. Learn from 500+ successful startup launches.', required: true },
+    { id: 'earlyBirdPrice', label: 'Early Bird Price', type: 'text', defaultValue: '$29', required: true },
+    { id: 'footerText', label: 'Footer Text', type: 'text', defaultValue: '© 2026 LaunchPad. All rights reserved.', required: true },
+  ],
+  render: (data) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${data.brandName} - ${data.tagline}</title>
+  <meta name="description" content="${data.subheadline}">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${data.brandName} - ${data.tagline}">
+  <meta property="og:description" content="${data.subheadline}">
+  <meta property="og:site_name" content="${data.brandName}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${data.brandName} - ${data.tagline}">
+  <meta name="twitter:description" content="${data.subheadline}">
+  <link rel="canonical" href="${data.ctaLink}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1e293b; background: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .gradient-text { background: linear-gradient(135deg, ${data.secondaryColor}, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn-primary { display: inline-block; padding: 18px 40px; background: ${data.secondaryColor}; color: white; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 17px; transition: all 0.3s; border: none; cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px ${data.secondaryColor}50; background: #0891b2; }
+    .btn-secondary { display: inline-block; padding: 18px 40px; background: transparent; color: ${data.primaryColor}; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 17px; border: 2px solid #cbd5e1; transition: all 0.3s; }
+    .btn-secondary:hover { border-color: ${data.secondaryColor}; color: ${data.secondaryColor}; }
+    .btn-cta-large { display: inline-block; padding: 22px 56px; background: ${data.secondaryColor}; color: white; text-decoration: none; border-radius: 14px; font-weight: 800; font-size: 19px; transition: all 0.3s; }
+    .btn-cta-large:hover { transform: translateY(-3px); box-shadow: 0 16px 48px ${data.secondaryColor}50; background: #0891b2; }
+
+    /* Navbar */
+    .navbar { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { font-size: 24px; font-weight: 900; color: ${data.primaryColor}; letter-spacing: -0.5px; }
+    .logo span { color: ${data.secondaryColor}; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { text-decoration: none; color: #64748b; font-weight: 500; transition: color 0.2s; font-size: 15px; }
+    .nav-links a:hover { color: ${data.primaryColor}; }
+    .nav-cta { padding: 10px 24px !important; font-size: 14px !important; }
+
+    /* Hero */
+    .hero { padding: 160px 0 100px; text-align: center; background: linear-gradient(180deg, #f0f9ff 0%, #fff 100%); position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -40%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, ${data.secondaryColor}12 0%, transparent 70%); border-radius: 50%; }
+    .hero::after { content: ''; position: absolute; bottom: -20%; left: -10%; width: 400px; height: 400px; background: radial-gradient(circle, ${data.secondaryColor}08 0%, transparent 70%); border-radius: 50%; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: linear-gradient(135deg, ${data.secondaryColor}15, #22d3ee15); color: #0891b2; border-radius: 100px; font-size: 14px; font-weight: 600; margin-bottom: 32px; border: 1px solid ${data.secondaryColor}20; }
+    .hero h1 { font-size: 68px; font-weight: 900; line-height: 1.05; margin-bottom: 28px; max-width: 860px; margin-left: auto; margin-right: auto; color: ${data.primaryColor}; letter-spacing: -2px; }
+    .hero p { font-size: 21px; color: #64748b; max-width: 600px; margin: 0 auto 44px; line-height: 1.7; }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+    .hero-social-proof { margin-top: 48px; font-size: 14px; color: #94a3b8; position: relative; z-index: 1; }
+    .hero-social-proof strong { color: #475569; }
+    .hero-social-proof .avatars { display: inline-flex; margin: 0 6px; vertical-align: middle; }
+    .hero-social-proof .avatar { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #e2e8f0, #cbd5e1); border: 2px solid #fff; display: inline-block; margin-left: -8px; }
+    .hero-social-proof .avatar:first-child { margin-left: 0; }
+
+    /* Problem/Solution */
+    .problem-solution { padding: 100px 0; background: ${data.primaryColor}; color: white; position: relative; overflow: hidden; }
+    .problem-solution::before { content: ''; position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: linear-gradient(135deg, transparent 0%, ${data.secondaryColor}15 100%); }
+    .ps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; position: relative; z-index: 1; }
+    .ps-label { display: inline-block; padding: 6px 16px; border-radius: 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+    .ps-label.problem { background: #ef444430; color: #fca5a5; }
+    .ps-label.solution { background: ${data.secondaryColor}25; color: ${data.secondaryColor}; }
+    .ps-content h2 { font-size: 32px; font-weight: 800; margin-bottom: 20px; line-height: 1.3; }
+    .ps-content p { font-size: 18px; line-height: 1.8; opacity: 0.85; }
+    .ps-divider { width: 2px; background: linear-gradient(180deg, transparent, ${data.secondaryColor}40, transparent); position: absolute; left: 50%; top: 10%; height: 80%; }
+
+    /* Features */
+    .features { padding: 100px 0; background: #f8fafc; }
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-header .section-label { display: inline-block; padding: 6px 16px; background: ${data.secondaryColor}10; color: #0891b2; border-radius: 6px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }
+    .section-header h2 { font-size: 42px; font-weight: 800; color: ${data.primaryColor}; margin-bottom: 16px; letter-spacing: -1px; }
+    .section-header p { font-size: 18px; color: #64748b; max-width: 520px; margin: 0 auto; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .feature-card { padding: 44px 36px; border-radius: 20px; background: white; border: 1px solid #e2e8f0; transition: all 0.3s; position: relative; }
+    .feature-card:hover { transform: translateY(-6px); box-shadow: 0 24px 64px rgba(0,0,0,0.06); border-color: ${data.secondaryColor}30; }
+    .feature-number { position: absolute; top: 20px; right: 24px; font-size: 64px; font-weight: 900; color: #f1f5f9; line-height: 1; }
+    .feature-icon { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, ${data.secondaryColor}, #22d3ee); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+    .feature-icon svg { width: 28px; height: 28px; color: white; }
+    .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: ${data.primaryColor}; }
+    .feature-card p { color: #64748b; line-height: 1.7; font-size: 15px; }
+
+    /* Early Adopter Pricing */
+    .early-adopter { padding: 100px 0; text-align: center; background: #fff; }
+    .early-card { max-width: 560px; margin: 0 auto; padding: 56px 48px; border-radius: 24px; background: linear-gradient(135deg, ${data.primaryColor}, #1e293b); color: white; position: relative; overflow: hidden; }
+    .early-card::before { content: ''; position: absolute; top: -50%; right: -50%; width: 100%; height: 100%; background: radial-gradient(circle, ${data.secondaryColor}20 0%, transparent 70%); }
+    .early-card > * { position: relative; z-index: 1; }
+    .early-label { display: inline-block; padding: 8px 20px; background: ${data.secondaryColor}25; color: ${data.secondaryColor}; border-radius: 100px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 28px; }
+    .early-card h2 { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+    .early-card .price { font-size: 72px; font-weight: 900; margin: 20px 0 8px; letter-spacing: -2px; }
+    .early-card .price-note { font-size: 15px; opacity: 0.7; margin-bottom: 8px; }
+    .early-card .original-price { font-size: 18px; text-decoration: line-through; opacity: 0.5; margin-bottom: 24px; }
+    .early-features { list-style: none; text-align: left; margin: 32px 0; }
+    .early-features li { padding: 10px 0; display: flex; align-items: center; gap: 12px; font-size: 15px; opacity: 0.9; }
+    .early-features li::before { content: '✓'; color: ${data.secondaryColor}; font-weight: 800; font-size: 16px; flex-shrink: 0; }
+    .urgency-text { font-size: 14px; color: ${data.secondaryColor}; margin-top: 16px; font-weight: 600; }
+    .spots-bar { width: 100%; height: 6px; background: rgba(255,255,255,0.15); border-radius: 100px; margin-top: 12px; overflow: hidden; }
+    .spots-fill { width: 72%; height: 100%; background: linear-gradient(90deg, ${data.secondaryColor}, #22d3ee); border-radius: 100px; }
+    .early-card .btn-primary { margin-top: 20px; width: 100%; text-align: center; padding: 20px; font-size: 18px; }
+
+    /* Final CTA */
+    .cta { padding: 100px 0; text-align: center; background: linear-gradient(180deg, #f0f9ff 0%, #fff 100%); }
+    .cta h2 { font-size: 44px; font-weight: 800; color: ${data.primaryColor}; margin-bottom: 16px; letter-spacing: -1px; }
+    .cta p { font-size: 20px; color: #64748b; max-width: 540px; margin: 0 auto 40px; line-height: 1.7; }
+    .cta-sub { font-size: 14px; color: #94a3b8; margin-top: 16px; }
+
+    /* Footer */
+    .footer { padding: 48px 0; text-align: center; color: #94a3b8; font-size: 14px; border-top: 1px solid #e2e8f0; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+    .footer-links a { color: #64748b; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-links a:hover { color: ${data.secondaryColor}; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 38px; letter-spacing: -1px; }
+      .hero { padding: 120px 0 60px; }
+      .hero p { font-size: 18px; }
+      .section-header h2 { font-size: 30px; }
+      .ps-grid { grid-template-columns: 1fr; gap: 48px; }
+      .ps-divider { display: none; }
+      .ps-content h2 { font-size: 26px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .cta h2 { font-size: 30px; }
+      .early-card { padding: 40px 28px; }
+      .early-card .price { font-size: 56px; }
+      .btn-cta-large { padding: 18px 40px; font-size: 17px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 32px; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-buttons .btn-primary, .hero-buttons .btn-secondary { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">${data.brandName}<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#problem">Why Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="${data.ctaLink}" class="btn-primary nav-cta">${data.ctaText}</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">🚀 Now in Beta</div>
+      <h1>${data.tagline}</h1>
+      <p>${data.subheadline}</p>
+      <div class="hero-buttons">
+        <a href="${data.ctaLink}" class="btn-primary">${data.ctaText}</a>
+        <a href="#features" class="btn-secondary">See How It Works</a>
+      </div>
+      <div class="hero-social-proof">
+        <span class="avatars">
+          <span class="avatar"></span>
+          <span class="avatar"></span>
+          <span class="avatar"></span>
+          <span class="avatar"></span>
+          <span class="avatar"></span>
+        </span>
+        <strong>1,200+</strong> founders already building with ${data.brandName}
+      </div>
+    </div>
+  </section>
+
+  <section class="problem-solution" id="problem">
+    <div class="container">
+      <div class="ps-grid">
+        <div class="ps-content">
+          <span class="ps-label problem">The Problem</span>
+          <h2>You're building blind</h2>
+          <p>${data.problemStatement}</p>
+        </div>
+        <div class="ps-content">
+          <span class="ps-label solution">The Solution</span>
+          <h2>Ship with confidence</h2>
+          <p>${data.solutionStatement}</p>
+        </div>
+      </div>
+      <div class="ps-divider"></div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How it works</span>
+        <h2>Everything you need to <span class="gradient-text">launch fast</span></h2>
+        <p>Three powerful tools designed for founders who move fast</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-number">01</span>
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>${data.feature1Title}</h3>
+          <p>${data.feature1Desc}</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-number">02</span>
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>${data.feature2Title}</h3>
+          <p>${data.feature2Desc}</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-number">03</span>
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+          </div>
+          <h3>${data.feature3Title}</h3>
+          <p>${data.feature3Desc}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="early-adopter" id="pricing">
+    <div class="container">
+      <div class="early-card">
+        <span class="early-label">🔥 Early Adopter Pricing</span>
+        <h2>Founding Member Deal</h2>
+        <div class="original-price">$99/month</div>
+        <div class="price">${data.earlyBirdPrice}</div>
+        <div class="price-note">one-time payment, lifetime access</div>
+        <ul class="early-features">
+          <li>All current and future features</li>
+          <li>Priority access to new tools</li>
+          <li>Private founder community</li>
+          <li>1-on-1 launch strategy call</li>
+          <li>Money-back guarantee</li>
+        </ul>
+        <a href="${data.ctaLink}" class="btn-primary">Claim This Deal</a>
+        <div class="urgency-text">🔥 Only 28 spots left at this price</div>
+        <div class="spots-bar"><div class="spots-fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Stop waiting. Start <span class="gradient-text">launching</span>.</h2>
+      <p>Your next chapter starts today. Join thousands of founders who chose to ship fast and iterate, not plan forever.</p>
+      <a href="${data.ctaLink}" class="btn-cta-large">${data.ctaText}</a>
+      <div class="cta-sub">No credit card required · Cancel anytime · 30-day guarantee</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Twitter</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>${data.footerText}</p>
+    </div>
+  </footer>
+</body>
+</html>`,
+};

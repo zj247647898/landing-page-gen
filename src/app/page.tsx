@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { getAllTemplates } from '@/lib/templates';
-import { ArrowRight, Zap, Palette, Download, Sparkles, Clock, Shield, Star, Users, TrendingUp, Check } from 'lucide-react';
+import { ArrowRight, Zap, Palette, Download, Sparkles, Clock, Shield, Star, Users, TrendingUp, Check, Gift, Flame, Rocket, Code, Globe } from 'lucide-react';
 import ShareButtons from '@/components/ShareButtons';
 
 export default function Home() {
@@ -11,6 +11,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      {/* Urgency Banner */}
+      <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-center py-2.5 px-4 text-sm font-medium">
+        <Flame className="w-4 h-4 inline mr-1" />
+        Launch Special — Pro Plan <span className="line-through opacity-70">¥399</span> <strong>¥199</strong> for a limited time!
+        <Link href="/pay" className="ml-2 underline underline-offset-2 hover:no-underline">Get it now &rarr;</Link>
+      </div>
+
       {/* Hero - High conversion design */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-violet-50 py-16 lg:py-24">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM2MzY2ZjEiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
@@ -37,7 +44,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Pick a template. Customize it. Export clean HTML. 
+              Pick from {templates.length} templates. Customize it. Export clean HTML.
               No coding. No design skills. No subscription.
             </p>
 
@@ -45,6 +52,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/editor/saas-modern">
                 <Button size="lg" className="text-lg px-8 h-14 shadow-lg shadow-indigo-200">
+                  <Rocket className="w-5 h-5 mr-2" />
                   Start Free — No Signup
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -58,7 +66,7 @@ export default function Home() {
 
             {/* Trust signals */}
             <div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-600" /> 9 templates</span>
+              <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-600" /> {templates.length} templates</span>
               <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-600" /> Live preview</span>
               <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-600" /> Export HTML/CSS</span>
               <span className="flex items-center gap-1.5"><Check className="w-4 h-4 text-green-600" /> Mobile responsive</span>
@@ -78,23 +86,23 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="w-14 h-14 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-indigo-600">1</span>
+                <Palette className="w-7 h-7 text-indigo-600" />
               </div>
-              <h3 className="font-semibold mb-2">Pick a Template</h3>
-              <p className="text-sm text-muted-foreground">9 high-converting designs for SaaS, e-commerce, apps, courses, and more</p>
+              <h3 className="font-semibold mb-2">1. Pick a Template</h3>
+              <p className="text-sm text-muted-foreground">{templates.length} high-converting designs for SaaS, e-commerce, apps, courses, restaurants, and more</p>
             </div>
             <div className="text-center">
-              <div className="w-14 h-14 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-indigo-600">2</span>
+              <div className="w-14 h-14 bg-violet-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Code className="w-7 h-7 text-violet-600" />
               </div>
-              <h3 className="font-semibold mb-2">Customize It</h3>
+              <h3 className="font-semibold mb-2">2. Customize It</h3>
               <p className="text-sm text-muted-foreground">Edit text, colors, and content with live preview. See every change instantly</p>
             </div>
             <div className="text-center">
-              <div className="w-14 h-14 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-indigo-600">3</span>
+              <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-7 h-7 text-emerald-600" />
               </div>
-              <h3 className="font-semibold mb-2">Export & Ship</h3>
+              <h3 className="font-semibold mb-2">3. Export & Ship</h3>
               <p className="text-sm text-muted-foreground">Download clean HTML/CSS. Deploy to GitHub Pages, Netlify, or any host</p>
             </div>
           </div>
@@ -105,16 +113,17 @@ export default function Home() {
       <section id="templates" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Choose a template</h2>
-            <p className="text-muted-foreground">{templates.length} templates — each optimized for conversion</p>
+            <h2 className="text-3xl font-bold mb-4">{templates.length} templates — each optimized for conversion</h2>
+            <p className="text-muted-foreground">From SaaS to restaurants, find the perfect starting point for your business</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {templates.map((template) => (
+            {templates.map((template, index) => (
               <Card key={template.id} className="group hover:shadow-lg transition-all hover:-translate-y-1">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="outline">{template.category}</Badge>
                     {template.id === 'saas-modern' && <Badge className="bg-green-100 text-green-700 text-xs">FREE</Badge>}
+                    {template.id !== 'saas-modern' && <Badge className="bg-indigo-100 text-indigo-700 text-xs">PRO</Badge>}
                   </div>
                   <CardTitle className="text-xl">{template.name}</CardTitle>
                   <CardDescription>{template.description}</CardDescription>
@@ -129,6 +138,14 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/pricing">
+              <Button variant="outline" size="lg">
+                Unlock All {templates.length} Templates — Pro Plan ¥199
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -163,6 +180,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quick Pricing */}
+      <section className="py-16 bg-gradient-to-r from-indigo-50 to-violet-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-4"><Gift className="w-3 h-3 mr-1" />Limited Time Offer</Badge>
+            <h2 className="text-3xl font-bold mb-4">One-time payment. Use forever.</h2>
+            <p className="text-muted-foreground mb-8">No subscription. No hidden fees. Pay once, build unlimited landing pages.</p>
+            <div className="grid sm:grid-cols-3 gap-6">
+              <Card className="p-6">
+                <div className="text-sm text-muted-foreground mb-1">Starter</div>
+                <div className="text-3xl font-bold mb-2">Free</div>
+                <p className="text-xs text-muted-foreground">1 template, try it out</p>
+                <Link href="/editor/saas-modern">
+                  <Button variant="outline" className="w-full mt-4" size="sm">Try Free</Button>
+                </Link>
+              </Card>
+              <Card className="p-6 border-indigo-600 shadow-lg relative">
+                <Badge className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs">BEST VALUE</Badge>
+                <div className="text-sm text-muted-foreground mb-1">Pro</div>
+                <div className="text-3xl font-bold mb-2"><span className="line-through text-muted-foreground text-lg">¥399</span> ¥199</div>
+                <p className="text-xs text-muted-foreground">All {templates.length} templates + export</p>
+                <Link href="/pay">
+                  <Button className="w-full mt-4" size="sm">Buy Now</Button>
+                </Link>
+              </Card>
+              <Card className="p-6">
+                <div className="text-sm text-muted-foreground mb-1">Agency</div>
+                <div className="text-3xl font-bold mb-2">¥699</div>
+                <p className="text-xs text-muted-foreground">Source code + white-label</p>
+                <Link href="/pay">
+                  <Button variant="outline" className="w-full mt-4" size="sm">Buy Now</Button>
+                </Link>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features comparison */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -185,7 +240,7 @@ export default function Home() {
                       ['One-time payment', false, true],
                       ['No subscription', false, true],
                       ['Clean HTML export', false, true],
-                      ['9 templates included', false, true],
+                      ['15 templates included', false, true],
                       ['Live preview editor', true, true],
                       ['No signup required', false, true],
                       ['Mobile responsive', true, true],

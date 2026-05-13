@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     default: "LP Gen — Landing Page Generator | Build & Export in 5 Minutes",
     template: "%s | LP Gen",
   },
-  description: "Create beautiful, high-converting landing pages without coding. 9 templates, live preview, export clean HTML. One-time payment ¥199, keep forever.",
+  description: "Create beautiful, high-converting landing pages without coding. 15 templates, live preview, export clean HTML. One-time payment ¥199, keep forever.",
   keywords: ["landing page builder", "landing page generator", "HTML exporter", "no code", "SaaS template", "landing page templates", "free landing page", "HTML template", "landing page maker"],
   openGraph: {
     title: "LP Gen — Ship your landing page in 5 minutes",
-    description: "9 templates. Live preview. Export clean HTML. No coding needed.",
+    description: "15 templates. Live preview. Export clean HTML. No coding needed.",
     type: "website",
     url: "https://zj247647898.github.io/landing-page-gen",
   },

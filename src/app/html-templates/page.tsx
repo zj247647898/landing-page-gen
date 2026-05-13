@@ -62,7 +62,7 @@ export default function HtmlTemplatesPage() {
             <CardContent>
               <div className="grid md:grid-cols-2 gap-3">
                 {[
-                  'All 9 templates with full customization',
+                  'All 15 templates with full customization',
                   'Clean HTML/CSS export (ZIP download)',
                   'Commercial license for client work',
                   'Mobile responsive by default',

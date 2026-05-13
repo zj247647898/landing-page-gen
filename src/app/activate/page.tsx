@@ -35,7 +35,7 @@ export default function ActivatePage() {
           </CardHeader>
           <CardContent className="text-center space-y-4">
             <p className="text-muted-foreground">
-              You now have access to all 9 templates and HTML export.
+              You now have access to all 15 templates and HTML export.
             </p>
             <Link href="/editor/saas-modern">
               <Button className="w-full">Start Creating →</Button>

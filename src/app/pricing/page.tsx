@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Pricing — One-Time Payment, Keep Forever',
-  description: 'Pro Plan ¥199 for all 9 templates and HTML export. Agency Plan ¥699 with source code. No subscription.',
+  description: 'Pro Plan ¥199 for all 15 templates and HTML export. Agency Plan ¥699 with source code. No subscription.',
 };
 
 const plans = [
@@ -26,7 +26,7 @@ const plans = [
     price: '$29',
     priceCNY: '¥199',
     description: 'Best for indie makers',
-    features: ['All 9 templates', 'Full customization', 'HTML export (ZIP)', 'Commercial license', 'Priority email support'],
+    features: ['All 15 templates', 'Full customization', 'HTML export (ZIP)', 'Commercial license', 'Priority email support'],
     cta: 'Buy Now',
     ctaLink: '/pay',
     popular: true,

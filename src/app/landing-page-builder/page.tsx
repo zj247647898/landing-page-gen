@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Landing Page Builder — Create Pages Without Code',
-  description: 'Build landing pages in 5 minutes. 9 templates, live preview, export HTML. No coding, no signup, no subscription. Free to start.',
+  description: 'Build landing pages in 5 minutes. 15 templates, live preview, export HTML. No coding, no signup, no subscription. Free to start.',
 };
 
 const features = [

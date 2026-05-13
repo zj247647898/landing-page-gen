@@ -1,0 +1,331 @@
+import { TemplateConfig } from './types';
+
+export const restaurantTemplate: TemplateConfig = {
+  id: 'restaurant',
+  name: 'Restaurant / Café',
+  description: 'Restaurant landing page with menu highlights, gallery, reservations, and location',
+  category: 'Food & Drink',
+  thumbnail: '/thumbnails/restaurant.png',
+  fields: [
+    { id: 'restaurantName', label: 'Restaurant Name', type: 'text', defaultValue: 'La Maison Dorée', required: true },
+    { id: 'tagline', label: 'Tagline', type: 'text', defaultValue: 'Where Every Meal Tells a Story', required: true },
+    { id: 'description', label: 'Description', type: 'textarea', defaultValue: 'Experience the finest French-Mediterranean cuisine in an intimate, candlelit setting. Our chef crafts each dish with locally sourced ingredients and decades of passion.', required: true },
+    { id: 'ctaText', label: 'CTA Text', type: 'text', defaultValue: 'Reserve a Table', required: true },
+    { id: 'ctaLink', label: 'CTA Link', type: 'text', defaultValue: '#reserve', required: true },
+    { id: 'primaryColor', label: 'Primary Color', type: 'color', defaultValue: '#b45309', required: true },
+    { id: 'secondaryColor', label: 'Secondary Color', type: 'color', defaultValue: '#dc2626', required: true },
+    { id: 'cuisine', label: 'Cuisine Type', type: 'text', defaultValue: 'French-Mediterranean', required: true },
+    { id: 'address', label: 'Address', type: 'text', defaultValue: '42 Rue de la Paix, Paris 75002', required: true },
+    { id: 'phone', label: 'Phone', type: 'text', defaultValue: '+33 1 42 86 87 88', required: true },
+    { id: 'hours', label: 'Hours', type: 'text', defaultValue: 'Tue–Sun: 12:00–14:30 & 19:00–22:30', required: true },
+    { id: 'dish1', label: 'Dish 1 Name', type: 'text', defaultValue: 'Seared Duck Breast', required: true },
+    { id: 'dish1Price', label: 'Dish 1 Price', type: 'text', defaultValue: '$38', required: true },
+    { id: 'dish1Desc', label: 'Dish 1 Description', type: 'textarea', defaultValue: 'With cherry compote, roasted root vegetables, and red wine jus', required: true },
+    { id: 'dish2', label: 'Dish 2 Name', type: 'text', defaultValue: 'Pan-Seared Sea Bass', required: true },
+    { id: 'dish2Price', label: 'Dish 2 Price', type: 'text', defaultValue: '$42', required: true },
+    { id: 'dish2Desc', label: 'Dish 2 Description', type: 'textarea', defaultValue: 'With saffron risotto, grilled asparagus, and beurre blanc', required: true },
+    { id: 'dish3', label: 'Dish 3 Name', type: 'text', defaultValue: 'Truffle Risotto', required: true },
+    { id: 'dish3Price', label: 'Dish 3 Price', type: 'text', defaultValue: '$36', required: true },
+    { id: 'dish3Desc', label: 'Dish 3 Description', type: 'textarea', defaultValue: 'Arborio rice with black truffle, aged parmesan, and wild mushrooms', required: true },
+    { id: 'footerText', label: 'Footer Text', type: 'text', defaultValue: '© 2026 La Maison Dorée. All rights reserved.', required: true },
+  ],
+  render: (data) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${data.restaurantName} — ${data.cuisine} Restaurant</title>
+<meta name="description" content="${data.description}">
+<meta name="keywords" content="${data.cuisine}, restaurant, fine dining, reservations, ${data.restaurantName}">
+<meta property="og:title" content="${data.restaurantName} — ${data.tagline}">
+<meta property="og:description" content="${data.description}">
+<meta property="og:type" content="restaurant">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;line-height:1.6;color:#1c1917;background:#fffbf5}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.font-serif{font-family:'Playfair Display',Georgia,serif}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:all .3s}
+.nav.scrolled{background:rgba(28,25,23,.95);backdrop-filter:blur(10px);padding:12px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;text-decoration:none}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover{color:#fff}
+.nav-reserve{padding:10px 24px;background:${data.primaryColor};color:#fff!important;border-radius:4px;font-weight:600;letter-spacing:1px}
+.nav-reserve:hover{background:${data.secondaryColor}!important}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,25,23,.85),rgba(120,53,15,.6)),linear-gradient(45deg,#1c1917 0%,#44403c 50%,#78350f 100%);z-index:0}
+.hero-pattern{position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");z-index:1}
+.hero-content{position:relative;z-index:2;max-width:800px;padding:0 24px}
+.hero-badge{display:inline-block;padding:8px 24px;border:1px solid rgba(255,255,255,.3);border-radius:100px;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:32px}
+.hero h1{font-family:'Playfair Display',serif;font-size:72px;font-weight:700;line-height:1.1;margin-bottom:24px;text-shadow:0 2px 40px rgba(0,0,0,.3)}
+.hero .tagline{font-family:'Playfair Display',serif;font-size:24px;font-style:italic;color:rgba(255,255,255,.8);margin-bottom:40px}
+.hero-scroll{margin-top:60px;animation:bounce 2s infinite}
+.hero-scroll span{display:block;width:24px;height:24px;border-right:2px solid rgba(255,255,255,.5);border-bottom:2px solid rgba(255,255,255,.5);transform:rotate(45deg);margin:0 auto}
+@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}60%{transform:translateY(-5px)}}
+
+/* Menu Highlights */
+.menu{padding:100px 0;background:#fffbf5}
+.menu-header{text-align:center;margin-bottom:64px}
+.menu-header .label{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:${data.primaryColor};font-weight:600;margin-bottom:12px}
+.menu-header h2{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:#1c1917}
+.menu-header .divider{width:60px;height:2px;background:${data.primaryColor};margin:24px auto}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.menu-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(28,25,23,.06);transition:all .3s;border:1px solid #f5f0e8}
+.menu-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(28,25,23,.12)}
+.menu-card-img{height:220px;background:linear-gradient(135deg,#fef3c7,#fde68a);display:flex;align-items:center;justify-content:center;font-size:80px;position:relative;overflow:hidden}
+.menu-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(28,25,23,.05),transparent)}
+.menu-card-body{padding:32px}
+.menu-card-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.menu-card-top h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#1c1917}
+.menu-card-top .price{font-size:20px;font-weight:700;color:${data.primaryColor}}
+.menu-card-body p{color:#78716c;font-size:15px;line-height:1.6}
+
+/* Gallery / Atmosphere */
+.gallery{padding:100px 0;background:#1c1917;color:#fff}
+.gallery-header{text-align:center;margin-bottom:64px}
+.gallery-header .label{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:${data.primaryColor};font-weight:600;margin-bottom:12px}
+.gallery-header h2{font-family:'Playfair Display',serif;font-size:48px;font-weight:700}
+.gallery-header .divider{width:60px;height:2px;background:${data.primaryColor};margin:24px auto}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-item{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:1;cursor:pointer}
+.gallery-item-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;transition:transform .5s}
+.gallery-item:hover .gallery-item-bg{transform:scale(1.1)}
+.gallery-item:nth-child(1) .gallery-item-bg{background:linear-gradient(135deg,#92400e,#b45309)}
+.gallery-item:nth-child(2) .gallery-item-bg{background:linear-gradient(135deg,#78350f,#a16207)}
+.gallery-item:nth-child(3) .gallery-item-bg{background:linear-gradient(135deg,#7c2d12,#dc2626)}
+.gallery-item:nth-child(4) .gallery-item-bg{background:linear-gradient(135deg,#365314,#65a30d)}
+.gallery-item:nth-child(5) .gallery-item-bg{background:linear-gradient(135deg,#1e3a5f,#2563eb)}
+.gallery-item:nth-child(6) .gallery-item-bg{background:linear-gradient(135deg,#581c87,#9333ea)}
+.gallery-item:nth-child(1){grid-row:span 2;aspect-ratio:auto}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:14px;font-weight:500;opacity:0;transition:opacity .3s}
+.gallery-item:hover .gallery-caption{opacity:1}
+
+/* Reservation CTA */
+.reservation{padding:100px 0;background:linear-gradient(135deg,${data.primaryColor},${data.secondaryColor});color:#fff;text-align:center;position:relative;overflow:hidden}
+.reservation::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.05)}
+.reservation::after{content:'';position:absolute;bottom:-30%;left:-10%;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.05)}
+.reservation-content{position:relative;z-index:1}
+.reservation .emoji{font-size:48px;margin-bottom:24px}
+.reservation h2{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;margin-bottom:16px}
+.reservation p{font-size:18px;color:rgba(255,255,255,.85);margin-bottom:40px;max-width:500px;margin-left:auto;margin-right:auto}
+.btn-reserve{display:inline-block;padding:18px 48px;background:#fff;color:${data.primaryColor};text-decoration:none;border-radius:4px;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;transition:all .3s;box-shadow:0 4px 24px rgba(0,0,0,.2)}
+.btn-reserve:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+
+/* Contact / Location */
+.contact{padding:100px 0;background:#fffbf5}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-info h2{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:#1c1917;margin-bottom:32px}
+.contact-item{display:flex;gap:16px;margin-bottom:28px}
+.contact-icon{width:48px;height:48px;background:${data.primaryColor}15;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.contact-item h4{font-size:14px;letter-spacing:1px;text-transform:uppercase;color:${data.primaryColor};font-weight:600;margin-bottom:4px}
+.contact-item p{color:#57534e;font-size:16px}
+.contact-map{background:linear-gradient(135deg,#e7e5e4,#d6d3d1);border-radius:12px;min-height:360px;display:flex;align-items:center;justify-content:center;font-size:120px;position:relative;overflow:hidden}
+.contact-map::after{content:'📍';font-size:64px;position:absolute}
+
+/* Footer */
+.footer{padding:48px 0;background:#1c1917;color:rgba(255,255,255,.5);text-align:center;font-size:14px}
+.footer .logo{font-family:'Playfair Display',serif;font-size:20px;color:#fff;margin-bottom:12px}
+.footer-links{display:flex;gap:24px;justify-content:center;margin-top:16px}
+.footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:13px;transition:color .3s}
+.footer-links a:hover{color:#fff}
+
+@media(max-width:768px){
+.hero h1{font-size:40px}
+.hero .tagline{font-size:18px}
+.menu-grid{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:1fr 1fr}
+.gallery-item:nth-child(1){grid-row:auto}
+.contact-grid{grid-template-columns:1fr}
+.nav-links{display:none}
+.reservation h2{font-size:32px}
+.menu-header h2,.gallery-header h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+<div class="container">
+<div class="nav-inner">
+<a href="#" class="nav-logo">${data.restaurantName}</a>
+<div class="nav-links">
+<a href="#menu">Menu</a>
+<a href="#gallery">Atmosphere</a>
+<a href="#reserve">Reservations</a>
+<a href="#contact">Contact</a>
+<a href="${data.ctaLink}" class="nav-reserve">${data.ctaText}</a>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-pattern"></div>
+<div class="hero-content">
+<div class="hero-badge">🍽️ ${data.cuisine}</div>
+<h1>${data.restaurantName}</h1>
+<p class="tagline">${data.tagline}</p>
+<a href="${data.ctaLink}" class="btn-reserve">${data.ctaText}</a>
+<div class="hero-scroll"><span></span></div>
+</div>
+</section>
+
+<!-- Menu Highlights -->
+<section class="menu" id="menu">
+<div class="container">
+<div class="menu-header">
+<div class="label">🍽️ Our Specialties</div>
+<h2>Menu Highlights</h2>
+<div class="divider"></div>
+</div>
+<div class="menu-grid">
+<div class="menu-card">
+<div class="menu-card-img">🦆</div>
+<div class="menu-card-body">
+<div class="menu-card-top">
+<h3>${data.dish1}</h3>
+<span class="price">${data.dish1Price}</span>
+</div>
+<p>${data.dish1Desc}</p>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-card-img">🐟</div>
+<div class="menu-card-body">
+<div class="menu-card-top">
+<h3>${data.dish2}</h3>
+<span class="price">${data.dish2Price}</span>
+</div>
+<p>${data.dish2Desc}</p>
+</div>
+</div>
+<div class="menu-card">
+<div class="menu-card-img">🍄</div>
+<div class="menu-card-body">
+<div class="menu-card-top">
+<h3>${data.dish3}</h3>
+<span class="price">${data.dish3Price}</span>
+</div>
+<p>${data.dish3Desc}</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Gallery / Atmosphere -->
+<section class="gallery" id="gallery">
+<div class="container">
+<div class="gallery-header">
+<div class="label">📸 Experience</div>
+<h2>Our Atmosphere</h2>
+<div class="divider"></div>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item">
+<div class="gallery-item-bg">🍷</div>
+<div class="gallery-caption">Wine Cellar</div>
+</div>
+<div class="gallery-item">
+<div class="gallery-item-bg">🪑</div>
+<div class="gallery-caption">Main Dining</div>
+</div>
+<div class="gallery-item">
+<div class="gallery-item-bg">🕯️</div>
+<div class="gallery-caption">Intimate Setting</div>
+</div>
+<div class="gallery-item">
+<div class="gallery-item-bg">🌿</div>
+<div class="gallery-caption">Garden Terrace</div>
+</div>
+<div class="gallery-item">
+<div class="gallery-item-bg">🍸</div>
+<div class="gallery-caption">Bar & Lounge</div>
+</div>
+<div class="gallery-item">
+<div class="gallery-item-bg">✨</div>
+<div class="gallery-caption">Private Events</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Reservation CTA -->
+<section class="reservation" id="reserve">
+<div class="reservation-content">
+<div class="emoji">🥂</div>
+<h2>Reserve Your Table</h2>
+<p>${data.description}</p>
+<a href="${data.ctaLink}" class="btn-reserve">${data.ctaText}</a>
+</div>
+</section>
+
+<!-- Contact / Location -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info">
+<h2>Visit Us</h2>
+<div class="contact-item">
+<div class="contact-icon">📍</div>
+<div>
+<h4>Address</h4>
+<p>${data.address}</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📞</div>
+<div>
+<h4>Phone</h4>
+<p>${data.phone}</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">🕐</div>
+<div>
+<h4>Hours</h4>
+<p>${data.hours}</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">🍽️</div>
+<div>
+<h4>Cuisine</h4>
+<p>${data.cuisine}</p>
+</div>
+</div>
+</div>
+<div class="contact-map">🗺️</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="logo">${data.restaurantName}</div>
+<p>${data.footerText}</p>
+<div class="footer-links">
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#reserve">Reservations</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{const nav=document.getElementById('nav');nav.classList.toggle('scrolled',window.scrollY>60)});
+</script>
+</body>
+</html>`,
+};

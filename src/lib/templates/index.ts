@@ -7,6 +7,12 @@ import { aiToolTemplate } from './ai-tool-template';
 import { waitlistTemplate } from './waitlist-template';
 import { portfolioTemplate } from './portfolio-template';
 import { eventTemplate } from './event-template';
+import { podcastTemplate } from './podcast-template';
+import { restaurantTemplate } from './restaurant-template';
+import { startupTemplate } from './startup-template';
+import { fitnessTemplate } from './fitness-template';
+import { nonprofitTemplate } from './nonprofit-template';
+import { realEstateTemplate } from './real-estate-template';
 import { TemplateConfig } from './types';
 
 export const templates: TemplateConfig[] = [
@@ -19,6 +25,12 @@ export const templates: TemplateConfig[] = [
   waitlistTemplate,
   portfolioTemplate,
   eventTemplate,
+  podcastTemplate,
+  startupTemplate,
+  fitnessTemplate,
+  restaurantTemplate,
+  nonprofitTemplate,
+  realEstateTemplate,
 ];
 
 export function getTemplateById(id: string): TemplateConfig | undefined {
