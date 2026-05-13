@@ -9,8 +9,9 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { Eye, Download, Check, Loader2 } from 'lucide-react';
+import { Eye, Download, Check, Loader2, Lock } from 'lucide-react';
 import JSZip from 'jszip';
+import Link from 'next/link';
 
 interface TemplateEditorProps {
   templateId: string;
@@ -41,6 +42,17 @@ export default function TemplateEditor({
   const [exporting, setExporting] = useState(false);
   const [exported, setExported] = useState(false);
 
+  // Free tier: only saas-modern is free. All others require Pro.
+  const isFreeTemplate = templateId === 'saas-modern';
+  // In production, check localStorage for purchase status
+  const [isPro] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('lpgen_pro') === 'true';
+    }
+    return false;
+  });
+  const canExport = isFreeTemplate || isPro;
+
   // Generate HTML by replacing placeholders in initialHtml
   const generateHtml = useCallback(() => {
     let html = initialHtml;
@@ -59,6 +71,7 @@ export default function TemplateEditor({
   const renderedHtml = generateHtml();
 
   const handleExport = useCallback(async () => {
+    if (!canExport) return;
     setExporting(true);
     try {
       const zip = new JSZip();
@@ -156,17 +169,28 @@ export default function TemplateEditor({
           <Button
             className="w-full"
             onClick={handleExport}
-            disabled={exporting}
+            disabled={exporting || !canExport}
           >
-            {exporting ? (
-              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-            ) : exported ? (
-              <Check className="w-4 h-4 mr-2" />
+            {canExport ? (
+              exporting ? (
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+              ) : exported ? (
+                <Check className="w-4 h-4 mr-2" />
+              ) : (
+                <Download className="w-4 h-4 mr-2" />
+              )
             ) : (
-              <Download className="w-4 h-4 mr-2" />
+              <Lock className="w-4 h-4 mr-2" />
             )}
-            {exporting ? 'Exporting...' : exported ? 'Downloaded!' : 'Export HTML'}
+            {!canExport ? 'Pro Required' : exporting ? 'Exporting...' : exported ? 'Downloaded!' : 'Export HTML'}
           </Button>
+          {!canExport && (
+            <Link href="/pricing" className="block">
+              <Button variant="outline" className="w-full text-indigo-600 border-indigo-600">
+                Upgrade to Pro — $29
+              </Button>
+            </Link>
+          )}
         </div>
       </Card>
 
