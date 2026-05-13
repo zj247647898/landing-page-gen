@@ -2,77 +2,78 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Check, ArrowRight, ListMusic, Bell, User, BarChart3 } from 'lucide-react';
+import { Check, ArrowRight, Headphones, Mic2, ListChecks, Rss } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Podcast Landing Page — Grow Your Audience Beyond Directories',
-  description: 'Create a podcast landing page in 5 minutes. Episode listings, subscribe buttons, host profile, dark theme. Export clean HTML.',
+  title: 'Podcast Landing Page — Grow Your Audience & Subscribers',
+  description: 'Create a podcast landing page in 5 minutes. Episode highlights, subscribe links, host bio, and reviews. No coding. Export clean HTML.',
 };
 
 const features = [
   {
-    icon: ListMusic,
-    title: 'Episode Listings',
-    desc: 'Display your latest episodes in a clean, scannable layout. Show titles, descriptions, and playback links — keep listeners coming back for more.',
+    icon: Headphones,
+    title: 'Episode Highlights',
+    desc: 'Feature your latest or best episodes with titles, descriptions, and play buttons. Hook new listeners from the first scroll.',
   },
   {
-    icon: Bell,
-    title: 'Subscribe Buttons',
-    desc: 'One-click subscribe buttons for Apple Podcasts, Spotify, Google Podcasts, and more. Make it effortless for new listeners to follow your show.',
+    icon: Rss,
+    title: 'Subscribe Links',
+    desc: 'One-click links to Apple Podcasts, Spotify, Google Podcasts, and more. Make subscribing effortless on every platform.',
   },
   {
-    icon: User,
-    title: 'Host Profile',
-    desc: 'Introduce yourself and co-hosts with a professional profile section. Build trust and connection before they even hit play.',
+    icon: Mic2,
+    title: 'Host Bio & Social',
+    desc: 'Introduce yourself and co-hosts. Link to social profiles so listeners can connect and follow beyond the show.',
   },
   {
-    icon: BarChart3,
-    title: 'Listener Stats',
-    desc: 'Showcase your reach with listener stats and social proof. Downloads, ratings, and featured mentions — let your numbers do the talking.',
+    icon: ListChecks,
+    title: 'Episode Directory',
+    desc: 'Organized list of episodes with search-friendly structure. Great for SEO and helping listeners find specific topics.',
   },
 ];
 
 const included = [
-  'Sticky navigation with your podcast logo and links',
-  'Hero section with show tagline and subscribe CTA',
-  'Latest episodes grid with titles and descriptions',
-  'Subscribe buttons for all major podcast platforms',
-  'Host profile section with photo and bio',
-  'Listener stats and social proof block',
-  'Dark theme optimized for media brands',
+  'Sticky navigation with podcast name and subscribe button',
+  'Hero section with show tagline and latest episode CTA',
+  'Episode highlights carousel or grid',
+  'Subscribe links for all major platforms',
+  'Host bio with photo and social links',
+  'Listener reviews and testimonials section',
+  'Subscribe call-to-action block',
+  'Footer with links and RSS feed',
 ];
 
 const advantages = [
-  { label: 'No monthly fees', vs: 'Other platforms charge $15–50/month forever' },
-  { label: 'Clean HTML export', vs: 'Others lock you into their platform' },
-  { label: 'One-time payment', vs: 'No recurring subscription surprises' },
-  { label: 'Dark theme ready', vs: 'Match your media brand aesthetic' },
+  { label: 'No monthly fees', vs: 'Podcast website builders charge $12–49/month' },
+  { label: 'Clean HTML export', vs: 'No platform lock-in, own your site' },
+  { label: 'One-time payment', vs: 'Keep your budget for better equipment' },
+  { label: 'SEO-optimized', vs: 'Rank for your show name and topics' },
 ];
 
 const faqs = [
   {
     q: 'Do I need coding skills to use this template?',
-    a: 'No. Our visual editor lets you customize everything — text, colors, images, layout — without writing a single line of code. When you\'re done, export clean HTML with one click.',
+    a: 'No. Our visual editor lets you customize everything — show name, episode details, colors, images — without writing code. Export clean HTML when you\'re ready to publish.',
   },
   {
-    q: 'Can I add subscribe buttons for my podcast platforms?',
-    a: 'Absolutely. The template includes pre-styled subscribe buttons for Apple Podcasts, Spotify, Google Podcasts, and more. Just paste your show links and you\'re live.',
+    q: 'Can I add my Apple Podcasts and Spotify links?',
+    a: 'Absolutely. The subscribe section supports links to Apple Podcasts, Spotify, Google Podcasts, Amazon Music, YouTube, and any other platform with a URL.',
   },
   {
-    q: 'How do I update episodes on my landing page?',
-    a: 'Open the editor, add or edit episode entries, and re-export. Since you own the HTML, you can update as often as you publish new episodes — no platform approval needed.',
+    q: 'How do I add new episodes after launch?',
+    a: 'Open the editor, update the episode section, and re-export. Since it\'s clean HTML, you can also edit the files directly — no proprietary backend required.',
   },
   {
-    q: 'Where can I host my podcast landing page?',
-    a: 'Since you get clean HTML/CSS files, you can host anywhere — Netlify, Vercel, GitHub Pages, your own server, or even drop it into an existing WordPress site.',
+    q: 'Is this template good for podcast SEO?',
+    a: 'Yes. The template uses proper heading hierarchy, structured content sections, and fast-loading static HTML — all key factors for search engine ranking.',
   },
 ];
 
 const relatedTemplates = [
-  { id: 'consulting-pro', name: 'Consulting Pro' },
   { id: 'event', name: 'Event' },
-  { id: 'startup', name: 'Startup' },
+  { id: 'portfolio', name: 'Portfolio' },
+  { id: 'consulting-pro', name: 'Consulting Pro' },
 ];
 
 export default function PodcastLandingPage() {
@@ -86,7 +87,7 @@ export default function PodcastLandingPage() {
             Podcast Landing Page
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Create a podcast landing page in 5 minutes. Episode listings, subscribe buttons, host profile, and dark theme — no coding required. Export clean HTML.
+            Create a podcast landing page in 5 minutes. Episode highlights, subscribe links, host bio, and listener reviews — no coding required. Export clean HTML.
           </p>
           <Link href="/editor/podcast">
             <Button size="lg" className="text-lg px-8 h-14">
@@ -106,8 +107,8 @@ export default function PodcastLandingPage() {
               <Card key={f.title} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-indigo-50">
-                      <f.icon className="w-5 h-5 text-indigo-600" />
+                    <div className="p-2 rounded-lg bg-violet-50">
+                      <f.icon className="w-5 h-5 text-violet-600" />
                     </div>
                     <CardTitle className="text-lg">{f.title}</CardTitle>
                   </div>
@@ -130,7 +131,7 @@ export default function PodcastLandingPage() {
               <div className="grid md:grid-cols-2 gap-3">
                 {included.map((item) => (
                   <div key={item} className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-indigo-600 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-violet-600 flex-shrink-0" />
                     <span className="text-sm">{item}</span>
                   </div>
                 ))}
@@ -182,13 +183,13 @@ export default function PodcastLandingPage() {
       {/* Final CTA */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-3xl">
-          <div className="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl p-8 md:p-12 text-center text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Grow Your Podcast Audience?</h2>
-            <p className="text-indigo-100 mb-6 max-w-lg mx-auto">
-              Build your podcast landing page now. Customize in minutes, export clean HTML, deploy anywhere.
+          <div className="bg-gradient-to-r from-violet-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Grow Your Audience?</h2>
+            <p className="text-violet-100 mb-6 max-w-lg mx-auto">
+              Build your podcast landing page now. Customize in minutes, export clean HTML, and give listeners a home base for your show.
             </p>
             <Link href="/editor/podcast">
-              <Button size="lg" className="text-lg px-8 h-14 bg-white text-indigo-600 hover:bg-indigo-50">
+              <Button size="lg" className="text-lg px-8 h-14 bg-white text-violet-600 hover:bg-violet-50">
                 Start Building <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
@@ -203,13 +204,13 @@ export default function PodcastLandingPage() {
           <div className="flex flex-wrap justify-center gap-3">
             {relatedTemplates.map((t) => (
               <Link key={t.id} href={`/editor/${t.id}`}>
-                <Badge variant="outline" className="text-sm py-1.5 px-3 cursor-pointer hover:bg-indigo-50 transition-colors">
+                <Badge variant="outline" className="text-sm py-1.5 px-3 cursor-pointer hover:bg-violet-50 transition-colors">
                   {t.name}
                 </Badge>
               </Link>
             ))}
             <Link href="/html-templates">
-              <Badge variant="outline" className="text-sm py-1.5 px-3 cursor-pointer hover:bg-indigo-50 transition-colors">
+              <Badge variant="outline" className="text-sm py-1.5 px-3 cursor-pointer hover:bg-violet-50 transition-colors">
                 All Templates
               </Badge>
             </Link>
