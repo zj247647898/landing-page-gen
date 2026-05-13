@@ -134,9 +134,19 @@ export default function TemplateEditor({
   const [mobileTab, setMobileTab] = useState<'edit' | 'preview'>('edit');
 
   return (
-    <div className="flex flex-col md:flex-row h-[calc(100vh-80px)] md:gap-4 p-2 md:p-4">
+    <div className="flex flex-col md:flex-row h-[calc(100vh-64px)] md:gap-4 p-2 md:p-4">
+      {/* Mobile tab toggle - fixed at top on mobile */}
+      <div className="flex md:hidden gap-2 mb-2">
+        <Button size="sm" variant={mobileTab === 'edit' ? 'default' : 'outline'} onClick={() => setMobileTab('edit')} className="flex-1">
+          Edit
+        </Button>
+        <Button size="sm" variant={mobileTab === 'preview' ? 'default' : 'outline'} onClick={() => setMobileTab('preview')} className="flex-1">
+          Preview
+        </Button>
+      </div>
+
       {/* Editor Panel */}
-      <Card className="w-full md:w-[400px] flex-shrink-0 flex flex-col overflow-hidden mb-2 md:mb-0">
+      <Card className={`w-full md:w-[400px] flex-shrink-0 flex flex-col overflow-hidden mb-2 md:mb-0 ${mobileTab === 'preview' ? 'hidden md:flex' : 'flex'}`}>
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <CardTitle className="text-lg">{templateName}</CardTitle>
@@ -160,11 +170,6 @@ export default function TemplateEditor({
         </CardContent>
         <Separator />
         <div className="p-4 space-y-2">
-          {/* Mobile tab toggle */}
-          <div className="flex md:hidden gap-2 mb-2">
-            <Button size="sm" variant={mobileTab === 'edit' ? 'default' : 'outline'} onClick={() => setMobileTab('edit')} className="flex-1">Edit</Button>
-            <Button size="sm" variant={mobileTab === 'preview' ? 'default' : 'outline'} onClick={() => setMobileTab('preview')} className="flex-1">Preview</Button>
-          </div>
           <div className={mobileTab === 'preview' ? 'hidden md:block' : ''}>
             <Button
               className="w-full"

@@ -132,9 +132,9 @@ export default function PayPage() {
                       <Image
                         src="/zhifubao.jpg"
                         alt="Alipay QR Code"
-                        width={250}
-                        height={250}
-                        className="rounded"
+                        width={220}
+                        height={220}
+                        className="rounded mx-auto"
                       />
                     </div>
               <div className="mt-4 space-y-2 text-center">
